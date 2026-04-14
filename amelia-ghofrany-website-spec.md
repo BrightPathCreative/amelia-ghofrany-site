@@ -46,11 +46,13 @@
 
 ### Typography
 
-| Role | Font | Weight | Notes |
-|------|------|--------|-------|
-| Display / Headings | **Cormorant Garamond** | 300, 400, 500 italic | Elegant serif. Use italic for emphasis words like *purpose*, *impact* |
-| Body / UI | **DM Sans** | 300, 400, 500 | Clean, warm sans-serif. Light weight (300) for body copy |
-| Labels / Eyebrows | DM Sans | 500 | 0.75–0.85rem, uppercase, wide letter-spacing (0.15–0.25em), gold colour |
+
+| Role               | Font                   | Weight               | Notes                                                                   |
+| ------------------ | ---------------------- | -------------------- | ----------------------------------------------------------------------- |
+| Display / Headings | **Cormorant Garamond** | 300, 400, 500 italic | Elegant serif. Use italic for emphasis words like *purpose*, *impact*   |
+| Body / UI          | **DM Sans**            | 300, 400, 500        | Clean, warm sans-serif. Light weight (300) for body copy                |
+| Labels / Eyebrows  | DM Sans                | 500                  | 0.75–0.85rem, uppercase, wide letter-spacing (0.15–0.25em), gold colour |
+
 
 ### Spacing Scale
 
@@ -79,26 +81,28 @@ Optional: Lenis for smooth scrolling
 
 ### Animation Inventory
 
-| Element | Trigger | Animation | Easing |
-|---------|---------|-----------|--------|
-| Hero eyebrow | Page load (delay 0.3s) | Fade up from y:20 | power3.out |
-| Hero title | Page load (staggered) | Fade up from y:30 | power3.out |
-| Hero subtitle | Page load (staggered) | Fade up from y:20 | power3.out |
-| Hero CTA buttons | Page load (staggered) | Fade up from y:20 | power3.out |
-| Hero image | Page load (staggered) | Fade in from x:40 | power3.out |
-| `.reveal` elements | ScrollTrigger (top 88%) | Fade up from y:40, opacity 0→1 | power3.out, 0.9s |
-| `.reveal-left` | ScrollTrigger (top 88%) | Slide in from x:-40 | power3.out, 1s |
-| `.reveal-right` | ScrollTrigger (top 88%) | Slide in from x:40 | power3.out, 1s |
-| `.reveal-scale` | ScrollTrigger (top 88%) | Scale from 0.95→1, opacity 0→1 | power3.out, 0.8s |
-| Service cards | ScrollTrigger (top 90%) | Staggered fade up, delay i×0.1s | power3.out |
-| Stat numbers | ScrollTrigger (top 90%, once) | Counter from 0 → target value | power2.out, 2s |
-| Logo marquee | CSS animation | Continuous translateX scroll, 35s linear infinite, pauses on hover | linear |
-| Hero decorative box | ScrollTrigger scrub | Parallax y:80, slight rotation | none (scrub) |
-| Nav background | Scroll > 80px | Blur backdrop + shadow on scroll | CSS transition 0.5s |
-| Button hover | Hover | Plum colour sweep via ::before translateX | cubic-bezier(0.22,1,0.36,1) |
-| Nav link underline | Hover | Gold underline width 0→100% | cubic-bezier(0.22,1,0.36,1) |
-| Service card hover | Hover | translateY(-4px), border glow, plum gradient overlay | 0.5s |
-| Image frames | Hover | Subtle scale(1.02) on the image inside | 0.6s ease |
+
+| Element             | Trigger                       | Animation                                                          | Easing                      |
+| ------------------- | ----------------------------- | ------------------------------------------------------------------ | --------------------------- |
+| Hero eyebrow        | Page load (delay 0.3s)        | Fade up from y:20                                                  | power3.out                  |
+| Hero title          | Page load (staggered)         | Fade up from y:30                                                  | power3.out                  |
+| Hero subtitle       | Page load (staggered)         | Fade up from y:20                                                  | power3.out                  |
+| Hero CTA buttons    | Page load (staggered)         | Fade up from y:20                                                  | power3.out                  |
+| Hero image          | Page load (staggered)         | Fade in from x:40                                                  | power3.out                  |
+| `.reveal` elements  | ScrollTrigger (top 88%)       | Fade up from y:40, opacity 0→1                                     | power3.out, 0.9s            |
+| `.reveal-left`      | ScrollTrigger (top 88%)       | Slide in from x:-40                                                | power3.out, 1s              |
+| `.reveal-right`     | ScrollTrigger (top 88%)       | Slide in from x:40                                                 | power3.out, 1s              |
+| `.reveal-scale`     | ScrollTrigger (top 88%)       | Scale from 0.95→1, opacity 0→1                                     | power3.out, 0.8s            |
+| Service cards       | ScrollTrigger (top 90%)       | Staggered fade up, delay i×0.1s                                    | power3.out                  |
+| Stat numbers        | ScrollTrigger (top 90%, once) | Counter from 0 → target value                                      | power2.out, 2s              |
+| Logo marquee        | CSS animation                 | Continuous translateX scroll, 35s linear infinite, pauses on hover | linear                      |
+| Hero decorative box | ScrollTrigger scrub           | Parallax y:80, slight rotation                                     | none (scrub)                |
+| Nav background      | Scroll > 80px                 | Blur backdrop + shadow on scroll                                   | CSS transition 0.5s         |
+| Button hover        | Hover                         | Plum colour sweep via ::before translateX                          | cubic-bezier(0.22,1,0.36,1) |
+| Nav link underline  | Hover                         | Gold underline width 0→100%                                        | cubic-bezier(0.22,1,0.36,1) |
+| Service card hover  | Hover                         | translateY(-4px), border glow, plum gradient overlay               | 0.5s                        |
+| Image frames        | Hover                         | Subtle scale(1.02) on the image inside                             | 0.6s ease                   |
+
 
 ### Smooth Scrolling (Optional Enhancement)
 
@@ -135,19 +139,23 @@ Mobile:             Hamburger → full-screen overlay menu
 #### Left Column — Text
 
 **Eyebrow**:
+
 ```
 Investor · Entrepreneur · Strategic Consultant · Coach
 ```
 
 **Headline** (Cormorant Garamond, 300 weight, clamp 2.8rem–4.5rem):
+
 ```
 Clarity, courage
 & the confidence
 to lead with *purpose.*
 ```
+
 > The word "purpose" should be italic and in plum colour.
 
 **Subtitle** (DM Sans 300, 1.1rem):
+
 ```
 I partner with ambitious leaders and businesses to navigate complexity,
 unlock growth, and create lasting impact — grounded in 20+ years of
@@ -155,7 +163,8 @@ enterprise experience and a belief in the power of diverse perspectives.
 ```
 
 **CTA Buttons**:
-- Primary: `Book a Discovery Call` → links to https://calendly.com/ameliaghofrany
+
+- Primary: `Book a Discovery Call` → links to [https://calendly.com/ameliaghofrany](https://calendly.com/ameliaghofrany)
 - Secondary: `Explore Services →` (arrow animates right on hover)
 
 #### Right Column — Image
@@ -196,14 +205,17 @@ enterprise experience and a belief in the power of diverse perspectives.
 **Label**: `About Amelia` (gold, uppercase, spaced)
 
 **Heading** (Cormorant Garamond):
+
 ```
 Enterprise rigour.
 Founder energy.
 *Human-first* leadership.
 ```
+
 > "Human-first" in italic plum.
 
 **Pull Quote** (cream background, gold left border):
+
 ```
 "Diverse perspectives don't just matter — they're the spark for
 creativity, smarter decisions, and long-term success."
@@ -211,12 +223,14 @@ creativity, smarter decisions, and long-term success."
 
 **Stats Grid** (2×2 below the quote):
 
-| Number | Label |
-|--------|-------|
-| 20+ | Years Experience |
-| 26 | Countries Explored |
-| 3 | Continents Lived On |
-| 6 | Continents Visited |
+
+| Number | Label               |
+| ------ | ------------------- |
+| 20+    | Years Experience    |
+| 26     | Countries Explored  |
+| 3      | Continents Lived On |
+| 6      | Continents Visited  |
+
 
 > Numbers animate up (counter) when scrolled into view. Numbers are Cormorant Garamond, plum colour.
 
@@ -243,7 +257,7 @@ on three continents and travelled to 26 countries across six — just
 Antarctica to go.
 ```
 
-> "CompassPoint Advisory" is a link to https://compasspoint.vercel.app/ styled in plum with gold underline.
+> "CompassPoint Advisory" is a link to [https://compasspoint.vercel.app/](https://compasspoint.vercel.app/) styled in plum with gold underline.
 
 ---
 
@@ -270,6 +284,7 @@ Antarctica to go.
 > These should have a subtle parallax scroll effect (different speeds). Consider Cormorant Garamond caption text below each.
 
 **Captions** (optional, in taupe, italic):
+
 ```
 Image 1: "Building what matters."
 Image 2: "Sharing the stage."
@@ -316,6 +331,7 @@ Requirements:
 
 **Label**: `What I Offer`
 **Heading**:
+
 ```
 Strategic expertise, delivered
 with purpose and pragmatism.
@@ -324,19 +340,22 @@ with purpose and pragmatism.
 **Grid**: 3 columns × 2 rows of service cards
 
 Each card has:
+
 - Numbered index (01–06) in gold at low opacity
 - Title (Cormorant Garamond)
 - Description paragraph
 - "Learn more →" link in gold
 
-| # | Title | Description | Link |
-|---|-------|-------------|------|
-| 01 | Strategic Consulting | I advise SMEs and business leaders on strategy, business transformation, scaling for growth, and operational improvement through CompassPoint Advisory. | → compasspoint.vercel.app/services |
-| 02 | Executive Coaching | I coach ambitious leaders and professionals who are successful — but ready for more clarity, direction, and alignment in their career and life. | → #coaching |
-| 03 | Speaking & Workshops | Available for keynotes, panel discussions, workshops and podcasts — sharing insights on women in leadership, business growth, and driving meaningful change. | → #contact |
-| 04 | AI & Digital Transformation | Practical, high-impact AI opportunities and a digital transformation roadmap right-sized for your business — not a bloated enterprise playbook. | → compasspoint.vercel.app |
-| 05 | Change Leadership | Human-centred change management for restructures, technology rollouts, and culture shifts — because transformation is ultimately about people. | → compasspoint.vercel.app |
-| 06 | Investing & Mentoring | I invest in and mentor early-stage founders building purpose-driven businesses — bringing strategic guidance, connections, and real operational experience. | → #contact |
+
+| #   | Title                       | Description                                                                                                                                                  | Link                               |
+| --- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------- |
+| 01  | Strategic Consulting        | I advise SMEs and business leaders on strategy, business transformation, scaling for growth, and operational improvement through CompassPoint Advisory.      | → compasspoint.vercel.app/services |
+| 02  | Executive Coaching          | I coach ambitious leaders and professionals who are successful — but ready for more clarity, direction, and alignment in their career and life.              | → #coaching                        |
+| 03  | Speaking & Workshops        | Available for keynotes, panel discussions, workshops and podcasts — sharing insights on women in leadership, business growth, and driving meaningful change. | → #contact                         |
+| 04  | AI & Digital Transformation | Practical, high-impact AI opportunities and a digital transformation roadmap right-sized for your business — not a bloated enterprise playbook.              | → compasspoint.vercel.app          |
+| 05  | Change Leadership           | Human-centred change management for restructures, technology rollouts, and culture shifts — because transformation is ultimately about people.               | → compasspoint.vercel.app          |
+| 06  | Investing & Mentoring       | I invest in and mentor early-stage founders building purpose-driven businesses — bringing strategic guidance, connections, and real operational experience.  | → #contact                         |
+
 
 **Card hover behaviour**: Slight lift (translateY -4px), plum gradient overlay fading in, gold border glow.
 
@@ -434,6 +453,7 @@ CTA: Book a Discovery Call → calendly.com/ameliaghofrany
 **Label**: `Beyond the Boardroom`
 **Heading**: `A curious traveller & global citizen.`
 **Body**:
+
 ```
 Each place I've visited has shaped how I see the world and how I lead,
 build, and connect — with empathy, openness, and a sense of adventure.
@@ -441,9 +461,11 @@ build, and connect — with empathy, openness, and a sense of adventure.
 
 **Stats row** (centered, large numbers):
 
-| 26 | 6 | 3 | 1 |
-|----|---|---|---|
+
+| 26        | 6          | 3                      | 1                        |
+| --------- | ---------- | ---------------------- | ------------------------ |
 | Countries | Continents | Continents Called Home | Bucket List (Antarctica) |
+
 
 **Travel Image Gallery** — Grid or masonry of travel/lifestyle photos:
 
@@ -508,12 +530,14 @@ build, and connect — with empathy, openness, and a sense of adventure.
 
 **Label**: `Ready to Begin?`
 **Heading** (Cormorant Garamond):
+
 ```
 Let's create something
 meaningful together.
 ```
 
 **Body**:
+
 ```
 Whether you're navigating a growth inflection point, ready for a career
 shift, or looking to sharpen your strategy — I'd love to hear from you.
@@ -522,6 +546,7 @@ shift, or looking to sharpen your strategy — I'd love to hear from you.
 **CTA Button**: `Book Your Free Discovery Call` → gold background, plum text, hover lifts with shadow.
 
 **Small print**:
+
 ```
 Confidential · No sales pressure · Just straight-talking strategic advice.
 ```
@@ -539,6 +564,7 @@ Melbourne, Australia · CompassPoint Advisory (link)
 ```
 
 **Optional additions**:
+
 - LinkedIn icon/link
 - Instagram icon/link
 - Email link
@@ -549,25 +575,28 @@ Melbourne, Australia · CompassPoint Advisory (link)
 
 All images Amelia will need to supply. Recommended specs included.
 
-| # | Filename | Location | Aspect Ratio | Description |
-|---|----------|----------|-------------|-------------|
-| 1 | `hero-portrait.jpg` | Hero section | 3:4 | Professional editorial portrait. Warm natural light, confident and approachable. |
-| 2 | `lifestyle-consulting.jpg` | Image strip | 4:3 | Amelia working/consulting — candid, natural moment. |
-| 3 | `speaking-event.jpg` | Image strip | 4:3 | Amelia speaking at an event, on a panel, or at a workshop. |
-| 4 | `travel-lifestyle.jpg` | Image strip | 4:3 | Travel or lifestyle photo — exploring a city, nature, cultural moment. |
-| 5 | `lifestyle-wide.jpg` | Full-width break | 21:9 | Cinematic wide shot — city, café, event, Melbourne laneway. Aspirational mood. |
-| 6 | `travel-01.jpg` | Beyond section | 16:9 | Travel landscape — dramatic scenery, cityscape, or nature. |
-| 7 | `travel-02.jpg` | Beyond section | 3:4 | Travel portrait — Amelia exploring, street scene, or cultural moment. |
-| 8 | `travel-03.jpg` | Beyond section | 1:1 | Square — food, culture, architecture detail, or candid travel moment. |
-| 9 | `travel-04.jpg` | Beyond section | 16:9 | Adventure or experience photo — something memorable and personal. |
-| 10 | `testimonial-01.jpg` | Testimonials | 1:1 (80px) | Client headshot (circle crop). |
-| 11+ | `logo-*.png` or `logo-*.svg` | Logo marquee | Varied (42px height) | Company logos — transparent PNG or SVG, greyscale originals preferred. |
+
+| #   | Filename                     | Location         | Aspect Ratio         | Description                                                                      |
+| --- | ---------------------------- | ---------------- | -------------------- | -------------------------------------------------------------------------------- |
+| 1   | `hero-portrait.jpg`          | Hero section     | 3:4                  | Professional editorial portrait. Warm natural light, confident and approachable. |
+| 2   | `lifestyle-consulting.jpg`   | Image strip      | 4:3                  | Amelia working/consulting — candid, natural moment.                              |
+| 3   | `speaking-event.jpg`         | Image strip      | 4:3                  | Amelia speaking at an event, on a panel, or at a workshop.                       |
+| 4   | `travel-lifestyle.jpg`       | Image strip      | 4:3                  | Travel or lifestyle photo — exploring a city, nature, cultural moment.           |
+| 5   | `lifestyle-wide.jpg`         | Full-width break | 21:9                 | Cinematic wide shot — city, café, event, Melbourne laneway. Aspirational mood.   |
+| 6   | `travel-01.jpg`              | Beyond section   | 16:9                 | Travel landscape — dramatic scenery, cityscape, or nature.                       |
+| 7   | `travel-02.jpg`              | Beyond section   | 3:4                  | Travel portrait — Amelia exploring, street scene, or cultural moment.            |
+| 8   | `travel-03.jpg`              | Beyond section   | 1:1                  | Square — food, culture, architecture detail, or candid travel moment.            |
+| 9   | `travel-04.jpg`              | Beyond section   | 16:9                 | Adventure or experience photo — something memorable and personal.                |
+| 10  | `testimonial-01.jpg`         | Testimonials     | 1:1 (80px)           | Client headshot (circle crop).                                                   |
+| 11+ | `logo-*.png` or `logo-*.svg` | Logo marquee     | Varied (42px height) | Company logos — transparent PNG or SVG, greyscale originals preferred.           |
+
 
 ---
 
 ## Technical Notes for Cursor Build
 
 ### Recommended Stack
+
 - **Framework**: Next.js (App Router) or Astro — either works well for a single-page site
 - **Styling**: Tailwind CSS with custom CSS variables, or CSS Modules
 - **Animations**: GSAP + ScrollTrigger (install via npm: `gsap`)
@@ -576,6 +605,7 @@ All images Amelia will need to supply. Recommended specs included.
 - **Deployment**: Vercel
 
 ### Key Implementation Details
+
 1. **GSAP ScrollTrigger** — register plugin globally, create scroll reveals for `.reveal` / `.reveal-left` / `.reveal-right` / `.reveal-scale` classes
 2. **Logo marquee** — CSS `@keyframes` infinite translateX. Duplicate logo set in DOM for seamless loop. Fade masks via pseudo-elements with gradients.
 3. **Stat counter** — GSAP `textContent` tween from 0 to target, `snap: { textContent: 1 }`, triggered once on scroll
@@ -588,6 +618,7 @@ All images Amelia will need to supply. Recommended specs included.
 10. **Responsive** — Mobile breakpoint at 768px. Single column layouts, hamburger nav, adjusted padding.
 
 ### Performance Considerations
+
 - Lazy load all images below the fold
 - Use `will-change: transform` on animated elements
 - Preconnect to Google Fonts
