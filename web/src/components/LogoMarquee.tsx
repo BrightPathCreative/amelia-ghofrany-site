@@ -23,15 +23,15 @@ const logos: { src: string; alt: string }[] = [
 
 export function LogoMarquee() {
   return (
-    <section className="bg-cream py-20 md:py-[7rem]">
+    <section className="surface-linen relative py-20 md:py-[7rem]">
       <div className="reveal mx-auto max-w-[1100px] px-6 text-center md:px-8">
-        <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold">
+        <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
           Trusted Experience
         </p>
-        <h2 className="mt-4 font-[family-name:var(--font-cormorant)] text-[clamp(1.75rem,3.5vw,2.75rem)] font-light text-charcoal">
+        <h2 className="mt-4 font-display text-[clamp(1.75rem,3.5vw,2.75rem)] font-normal text-brand-black">
           Companies I Have Worked With
         </h2>
-        <p className="mx-auto mt-3 max-w-lg text-sm text-taupe">
+        <p className="mx-auto mt-3 max-w-lg text-sm font-light text-brand-black/75">
           Organisations across finance, technology, government, retail, and professional
           services.
         </p>

@@ -1,56 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  /* ─── Base / Warm Neutrals ─── */
-  --cream: #faf6f1;
-  --cream-dark: #f0eae0;
-  --warm-white: #fffdf9;
-  --sand: #e8ded1;
-  --taupe: #8c7b6b;
-  --taupe-light: #b5a898;
+  /* Brand — Amelia Ghofrany */
+  --brand-navy: #111f39;
+  --brand-grey: #e3e3e3;
+  --brand-taupe: #87735e;
+  --brand-taupe-hover: #6e5f4f;
+  --brand-black: #080909;
+  --brand-blue: #a1b1c2;
 
-  /* ─── Gold Accents ─── */
-  --gold: #c4a265;
-  --gold-light: #d4b87a;
-  --gold-dark: #a68845;
-
-  /* ─── Plum / Maroon ─── */
-  --plum: #6b2d5b;
-  --plum-light: #8a4178;
-  --plum-dark: #4a1e3e;
-
-  /* ─── Warm Accent ─── */
-  --terracotta: #c17d5e;
-
-  /* ─── Neutrals / Text ─── */
-  --charcoal: #2c2c2c;
-  --charcoal-light: #4a4a4a;
-  --text-primary: #2c2c2c;
-  --text-secondary: #5a5a5a;
-  --text-light: #8c8c8c;
-
-  --background: var(--cream);
-  --foreground: var(--text-primary);
+  --background: var(--brand-grey);
+  --foreground: var(--brand-black);
+  --text-secondary: color-mix(in srgb, var(--brand-black) 72%, transparent);
+  --text-light: color-mix(in srgb, var(--brand-black) 45%, transparent);
 }
 
 @theme inline {
-  --color-cream: var(--cream);
-  --color-cream-dark: var(--cream-dark);
-  --color-warm-white: var(--warm-white);
-  --color-sand: var(--sand);
-  --color-taupe: var(--taupe);
-  --color-taupe-light: var(--taupe-light);
-  --color-gold: var(--gold);
-  --color-gold-light: var(--gold-light);
-  --color-gold-dark: var(--gold-dark);
-  --color-plum: var(--plum);
-  --color-plum-light: var(--plum-light);
-  --color-plum-dark: var(--plum-dark);
-  --color-terracotta: var(--terracotta);
-  --color-charcoal: var(--charcoal);
-  --color-charcoal-light: var(--charcoal-light);
-  --font-sans: var(--font-dm-sans);
-  --font-display: var(--font-cormorant);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-grey: var(--brand-grey);
+  --color-brand-taupe: var(--brand-taupe);
+  --color-brand-black: var(--brand-black);
+  --color-brand-blue: var(--brand-blue);
+
+  --color-text-secondary: var(--text-secondary);
+  --color-text-light: var(--text-light);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -60,22 +36,46 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
   font-weight: 300;
   overflow-x: clip;
 }
 
-/* Noise grain overlay */
+/* Linen texture on light surfaces (sections use relative + z-index for content) */
+.surface-linen {
+  position: relative;
+  background-color: var(--brand-grey);
+}
+
+.surface-linen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.055;
+  mix-blend-mode: multiply;
+  background-image: url("/linen_texture_background.png");
+  background-size: 480px auto;
+  background-repeat: repeat;
+}
+
+.surface-linen > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Noise grain overlay (global) */
 .noise-overlay {
   pointer-events: none;
   position: fixed;
   inset: 0;
   z-index: 9998;
-  opacity: 0.025;
+  opacity: 0.035;
   mix-blend-mode: multiply;
 }
 
-/* Button plum sweep */
+/* Primary CTA: taupe base, navy sweep on hover */
 .btn-sweep {
   position: relative;
   overflow: hidden;
@@ -86,7 +86,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--plum);
+  background: var(--brand-navy);
   transform: translateX(-101%);
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 0;
@@ -113,7 +113,7 @@ body {
   bottom: -2px;
   width: 0;
   height: 1px;
-  background: var(--gold);
+  background: var(--brand-taupe);
   transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -131,5 +131,5 @@ body {
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(107, 45, 91, 0.15);
+  box-shadow: 0 12px 40px rgba(17, 31, 57, 0.12);
 }

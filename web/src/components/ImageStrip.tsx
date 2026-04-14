@@ -20,9 +20,9 @@ const items = [
 
 export function ImageStrip() {
   return (
-    <section className="relative overflow-hidden bg-cream py-16 md:py-24">
+    <section className="surface-linen relative overflow-hidden py-16 md:py-24">
       <div className="mx-auto max-w-[1100px] px-6 md:px-8">
-        <p className="mb-10 text-center text-xs font-medium uppercase tracking-[0.22em] text-gold">
+        <p className="mb-10 text-center text-xs font-medium uppercase tracking-widest text-brand-taupe">
           Where the work happens
         </p>
         <div className="grid gap-6 md:grid-cols-3 md:gap-4">
@@ -31,7 +31,7 @@ export function ImageStrip() {
               key={item.src}
               className={`reveal-scale group ${i === 1 ? "md:mt-10" : i === 2 ? "md:mt-5" : ""}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-gold/30 shadow-md">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-brand-taupe/30 shadow-md">
                 <Image
                   src={item.src}
                   alt={item.alt}
@@ -40,7 +40,7 @@ export function ImageStrip() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <figcaption className="mt-3 font-[family-name:var(--font-cormorant)] text-sm italic text-taupe">
+              <figcaption className="mt-3 font-display text-sm italic text-brand-taupe">
                 {item.caption}
               </figcaption>
             </figure>

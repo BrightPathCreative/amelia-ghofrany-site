@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-cream pt-28 pb-16 md:pt-32">
+    <section className="relative min-h-[100svh] overflow-hidden bg-brand-navy pt-28 pb-16 md:pt-32">
       <div
-        className="pointer-events-none absolute -right-32 top-20 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,rgba(196,162,101,0.18),transparent_68%)]"
+        className="pointer-events-none absolute -right-32 top-20 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,rgba(161,177,194,0.2),transparent_68%)]"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -left-24 bottom-32 h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgba(107,45,91,0.12),transparent_70%)]"
+        className="pointer-events-none absolute -left-24 bottom-32 h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgba(135,115,94,0.14),transparent_70%)]"
         aria-hidden
       />
 
@@ -16,26 +16,26 @@ export function Hero() {
         <div>
           <p
             id="hero-eyebrow"
-            className="mb-6 text-xs font-medium uppercase tracking-[0.22em] text-gold md:text-[0.85rem]"
+            className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-brand-taupe md:text-[0.85rem]"
           >
             Investor · Entrepreneur · Strategic Consultant · Coach
           </p>
 
           <h1
             id="hero-title"
-            className="font-[family-name:var(--font-cormorant)] text-[clamp(2.5rem,5vw,4.25rem)] font-light leading-[1.08] tracking-tight text-charcoal"
+            className="font-display text-[clamp(2.5rem,5vw,4.25rem)] font-normal leading-[1.08] tracking-tight text-brand-grey"
           >
             <span className="hero-line block">Clarity, courage</span>
             <span className="hero-line block">&amp; the confidence</span>
             <span className="hero-line block">
               to lead with{" "}
-              <em className="italic text-plum">purpose.</em>
+              <em className="italic text-brand-taupe">purpose.</em>
             </span>
           </h1>
 
           <p
             id="hero-subtitle"
-            className="mt-8 max-w-xl text-[1.05rem] leading-relaxed text-text-secondary md:text-[1.1rem]"
+            className="mt-8 max-w-xl text-[1.05rem] font-light leading-relaxed text-brand-grey/85 md:text-[1.1rem]"
           >
             I partner with ambitious leaders and businesses to navigate
             complexity, unlock growth, and create lasting impact — grounded in
@@ -51,13 +51,13 @@ export function Hero() {
               href="https://calendly.com/ameliaghofrany"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-sweep inline-flex rounded-full bg-plum px-8 py-3.5 text-sm font-medium text-cream"
+              className="btn-sweep inline-flex rounded-full bg-brand-taupe px-8 py-3.5 text-sm font-medium text-brand-grey shadow-md transition hover:shadow-lg"
             >
               <span>Book a Discovery Call</span>
             </a>
             <a
               href="#services"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-charcoal"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-brand-grey/95 hover:text-brand-grey"
             >
               Explore Services
               <span
@@ -72,10 +72,10 @@ export function Hero() {
 
         <div id="hero-image-wrap" className="relative mx-auto w-full max-w-md md:max-w-none">
           <div
-            className="pointer-events-none absolute -right-4 -top-6 h-[88%] w-[72%] rounded-sm border border-gold/30"
+            className="pointer-events-none absolute -right-4 -top-6 h-[88%] w-[72%] rounded-sm border border-brand-taupe/35"
             aria-hidden
           />
-          <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-gold/30 shadow-xl">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-brand-taupe/35 shadow-xl shadow-black/25">
             <Image
               src="/images/amelia_speaking_outdoor.jpg"
               alt="Amelia Ghofrany speaking at an outdoor event"

@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
 import { CursorGlow } from "@/components/CursorGlow";
 import { SiteInit } from "@/components/SiteInit";
 import { Navigation } from "@/components/Navigation";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "600"],
   style: ["normal", "italic"],
   display: "swap",
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500"],
   display: "swap",
 });
 
@@ -40,9 +40,9 @@ export default function RootLayout({
   return (
     <html
       lang="en-AU"
-      className={`${cormorant.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="font-sans min-h-full flex flex-col bg-cream text-charcoal">
+      <body className="font-sans min-h-full flex flex-col bg-brand-grey text-brand-black">
         <NoiseOverlay />
         <CursorGlow />
         <SiteInit />

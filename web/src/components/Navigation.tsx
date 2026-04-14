@@ -1,7 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+const logoSrc = "/images/logos/AG%20Logo.png";
 
 const links = [
   { href: "#about", label: "About" },
@@ -27,22 +30,37 @@ export function Navigation() {
     };
   }, [open]);
 
+  const onDarkHero = !scrolled;
+
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "border-b border-gold/10 bg-warm-white/80 shadow-sm backdrop-blur-md"
-            : "bg-transparent"
+            ? "border-b border-brand-taupe/15 bg-brand-grey/85 shadow-sm backdrop-blur-md"
+            : "border-b border-transparent bg-transparent"
         }`}
       >
         <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-5 md:px-8">
           <Link
             href="#"
-            className="font-[family-name:var(--font-cormorant)] text-xl font-medium tracking-tight text-charcoal md:text-2xl"
+            className={`relative flex h-10 w-[min(220px,54vw)] shrink-0 items-center rounded-sm md:h-11 md:w-[240px] ${
+              onDarkHero
+                ? "bg-brand-grey/92 px-3 shadow-sm ring-1 ring-white/10 backdrop-blur-sm md:px-4"
+                : ""
+            }`}
             onClick={() => setOpen(false)}
           >
-            Amelia Ghofrany
+            <span className="relative block h-7 w-full md:h-8">
+              <Image
+                src={logoSrc}
+                alt="Amelia Ghofrany"
+                fill
+                className="object-contain object-left"
+                sizes="240px"
+                priority
+              />
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-10 md:flex">
@@ -50,14 +68,20 @@ export function Navigation() {
               <a
                 key={l.href}
                 href={l.href}
-                className="nav-link text-sm font-medium uppercase tracking-[0.18em] text-taupe"
+                className={`nav-link text-sm font-medium uppercase tracking-[0.18em] ${
+                  onDarkHero ? "text-brand-grey/90" : "text-brand-black/80"
+                }`}
               >
                 {l.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="btn-sweep rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-sm font-medium text-plum"
+              className={`rounded-full px-5 py-2.5 text-sm font-medium transition-colors ${
+                onDarkHero
+                  ? "border border-brand-taupe/70 text-brand-grey hover:bg-brand-taupe/15"
+                  : "btn-sweep border border-brand-taupe/50 bg-brand-taupe text-brand-grey shadow-sm hover:shadow-md"
+              }`}
             >
               <span>Work With Me</span>
             </a>
@@ -71,20 +95,26 @@ export function Navigation() {
             onClick={() => setOpen((v) => !v)}
           >
             <span
-              className={`block h-0.5 w-6 bg-charcoal transition-transform ${open ? "translate-y-2 rotate-45" : ""}`}
+              className={`block h-0.5 w-6 transition-transform ${
+                onDarkHero ? "bg-brand-grey" : "bg-brand-black"
+              } ${open ? "translate-y-2 rotate-45" : ""}`}
             />
             <span
-              className={`block h-0.5 w-6 bg-charcoal transition-opacity ${open ? "opacity-0" : ""}`}
+              className={`block h-0.5 w-6 transition-opacity ${
+                onDarkHero ? "bg-brand-grey" : "bg-brand-black"
+              } ${open ? "opacity-0" : ""}`}
             />
             <span
-              className={`block h-0.5 w-6 bg-charcoal transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`}
+              className={`block h-0.5 w-6 transition-transform ${
+                onDarkHero ? "bg-brand-grey" : "bg-brand-black"
+              } ${open ? "-translate-y-2 -rotate-45" : ""}`}
             />
           </button>
         </div>
       </header>
 
       <div
-        className={`fixed inset-0 z-[60] flex flex-col bg-warm-white/98 backdrop-blur-md transition-[visibility,opacity] duration-300 md:hidden ${
+        className={`fixed inset-0 z-[60] flex flex-col bg-brand-grey/98 backdrop-blur-md transition-[visibility,opacity] duration-300 md:hidden ${
           open ? "visible opacity-100" : "invisible opacity-0"
         }`}
         aria-hidden={!open}
@@ -94,7 +124,7 @@ export function Navigation() {
             <a
               key={l.href}
               href={l.href}
-              className="font-[family-name:var(--font-cormorant)] text-3xl text-charcoal"
+              className="font-display text-3xl text-brand-black"
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -102,7 +132,7 @@ export function Navigation() {
           ))}
           <a
             href="#contact"
-            className="mt-4 rounded-full bg-plum px-8 py-4 text-sm font-medium uppercase tracking-widest text-cream"
+            className="mt-4 rounded-full bg-brand-taupe px-8 py-4 text-sm font-medium uppercase tracking-widest text-brand-grey shadow-md transition hover:bg-[#6e5f4f]"
             onClick={() => setOpen(false)}
           >
             Work With Me

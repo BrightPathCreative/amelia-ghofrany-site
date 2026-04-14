@@ -24,7 +24,7 @@ export function CursorGlow() {
       className="pointer-events-none fixed inset-0 z-[1] hidden [@media(pointer:fine)]:block"
       style={{
         background:
-          "radial-gradient(300px circle at var(--x, 50%) var(--y, 50%), rgba(196, 162, 101, 0.06), transparent 65%)",
+          "radial-gradient(300px circle at var(--x, 50%) var(--y, 50%), rgba(161, 177, 194, 0.08), transparent 65%)",
       }}
       aria-hidden
     />

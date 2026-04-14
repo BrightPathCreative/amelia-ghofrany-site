@@ -2,22 +2,22 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative bg-warm-white py-20 md:py-[8rem]"
+      className="surface-linen relative py-20 md:py-[8rem]"
     >
       <div className="mx-auto grid max-w-[1100px] gap-14 px-6 md:grid-cols-2 md:gap-20 md:px-8">
         <div className="reveal-left space-y-10">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold">
+          <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
             About Amelia
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] text-[clamp(2rem,4vw,3rem)] font-light leading-tight text-charcoal">
+          <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-normal leading-tight text-brand-black">
             Enterprise rigour.
             <br />
             Founder energy.
             <br />
-            <em className="italic text-plum">Human-first</em> leadership.
+            <em className="italic text-brand-navy">Human-first</em> leadership.
           </h2>
 
-          <blockquote className="border-l-2 border-gold bg-cream/80 px-6 py-5 text-lg leading-relaxed text-charcoal-light">
+          <blockquote className="border-l-2 border-brand-taupe bg-white/60 px-6 py-5 text-lg font-light leading-relaxed text-brand-black/85 backdrop-blur-sm">
             &ldquo;Diverse perspectives don&apos;t just matter — they&apos;re the
             spark for creativity, smarter decisions, and long-term success.&rdquo;
           </blockquote>
@@ -30,7 +30,7 @@ export function About() {
           </div>
         </div>
 
-        <div className="reveal-right space-y-6 text-[1.02rem] leading-[1.75] text-text-secondary">
+        <div className="reveal-right space-y-6 text-[1.02rem] font-light leading-[1.75] text-text-secondary">
           <p>
             I&apos;ve spent over 20 years helping organisations lead through
             complex change — bringing people, processes and technology together
@@ -45,7 +45,7 @@ export function About() {
               href="https://compasspoint.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-plum underline decoration-gold/60 underline-offset-4 transition-colors hover:decoration-gold"
+              className="font-medium text-brand-navy underline decoration-brand-taupe/50 underline-offset-4 transition-colors hover:decoration-brand-taupe"
             >
               CompassPoint Advisory
             </a>
@@ -81,13 +81,13 @@ function StatBlock({
   return (
     <div>
       <p
-        className="stat-num font-[family-name:var(--font-cormorant)] text-4xl text-plum md:text-[2.75rem]"
+        className="stat-num font-display text-4xl text-brand-navy md:text-[2.75rem]"
         data-target={String(value)}
         data-suffix={suffix}
       >
         0{suffix}
       </p>
-      <p className="mt-1 text-sm text-taupe">{label}</p>
+      <p className="mt-1 text-sm text-brand-taupe">{label}</p>
     </div>
   );
 }

@@ -25,16 +25,16 @@ const gallery = [
 
 export function BeyondBoardroom() {
   return (
-    <section id="beyond" className="bg-cream py-20 md:py-[8rem]">
+    <section id="beyond" className="surface-linen relative py-20 md:py-[8rem]">
       <div className="mx-auto max-w-[1100px] px-6 md:px-8">
         <div className="reveal mx-auto max-w-3xl text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold">
+          <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
             Beyond the Boardroom
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-cormorant)] text-[clamp(1.85rem,3.5vw,2.75rem)] font-light text-charcoal">
+          <h2 className="mt-4 font-display text-[clamp(1.85rem,3.5vw,2.75rem)] font-normal text-brand-black">
             A curious traveller &amp; global citizen.
           </h2>
-          <p className="mt-6 text-text-secondary">
+          <p className="mt-6 font-light text-text-secondary">
             The same curiosity I bring to consulting and mentoring shows up
             when I travel — new places sharpen how I see the world, how I lead,
             and how I connect.
@@ -71,13 +71,13 @@ function TravelStat({ n, label }: { n: number; label: string }) {
   return (
     <div className="text-center">
       <p
-        className="stat-num font-[family-name:var(--font-cormorant)] text-4xl text-plum md:text-5xl"
+        className="stat-num font-display text-4xl text-brand-navy md:text-5xl"
         data-target={String(n)}
         data-suffix=""
       >
         0
       </p>
-      <p className="mt-1 max-w-[10rem] text-xs uppercase tracking-widest text-taupe">
+      <p className="mt-1 max-w-[10rem] text-xs uppercase tracking-widest text-brand-taupe">
         {label}
       </p>
     </div>
@@ -95,7 +95,7 @@ function GalleryImg({
 }) {
   return (
     <div
-      className={`group relative w-full overflow-hidden rounded shadow-md ${className}`}
+      className={`group relative w-full overflow-hidden rounded border border-brand-taupe/25 shadow-md ${className}`}
     >
       <Image
         src={src}
