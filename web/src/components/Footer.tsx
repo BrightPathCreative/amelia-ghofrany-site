@@ -36,6 +36,9 @@ export function Footer() {
           </a>
         </div>
       </div>
+      <div className="mx-auto mt-8 max-w-[1100px] border-t border-white/10 px-6 pt-8 text-center text-xs text-cream/50 md:px-8">
+        <p>Built and maintained by Bright Path Creative</p>
+      </div>
     </footer>
   );
 }
