@@ -47,16 +47,16 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative bg-charcoal py-20 text-cream md:py-[8rem]"
+      className="relative bg-warm-white py-20 md:py-[8rem]"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_30%_0%,rgba(107,45,91,0.35),transparent_55%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_30%_0%,rgba(196,162,101,0.12),transparent_55%)]" />
 
       <div className="relative z-[1] mx-auto max-w-[1100px] px-6 md:px-8">
         <div className="reveal mb-14 max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold">
             What I Offer
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-cormorant)] text-[clamp(1.85rem,3.8vw,3rem)] font-light leading-tight">
+          <h2 className="mt-4 font-[family-name:var(--font-cormorant)] text-[clamp(1.85rem,3.8vw,3rem)] font-light leading-tight text-charcoal">
             Strategic expertise, delivered
             <br />
             with purpose and pragmatism.
@@ -67,14 +67,14 @@ export function Services() {
           {services.map((s) => (
             <article
               key={s.n}
-              className="service-card service-card-anim group relative overflow-hidden rounded-sm border border-white/10 bg-white/[0.04] p-8"
+              className="service-card service-card-anim group relative overflow-hidden rounded-sm border border-gold/15 bg-cream/90 p-8 shadow-sm"
             >
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-plum/0 via-plum/0 to-plum/35 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              <p className="relative text-5xl font-light text-gold/25">{s.n}</p>
-              <h3 className="relative mt-4 font-[family-name:var(--font-cormorant)] text-2xl font-medium">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-gold/[0.06] via-transparent to-plum/[0.06] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+              <p className="relative text-5xl font-light text-gold/35">{s.n}</p>
+              <h3 className="relative mt-4 font-[family-name:var(--font-cormorant)] text-2xl font-medium text-charcoal">
                 {s.title}
               </h3>
-              <p className="relative mt-4 text-sm leading-relaxed text-cream/75">
+              <p className="relative mt-4 text-sm leading-relaxed text-text-secondary">
                 {s.body}
               </p>
               <a
@@ -82,7 +82,7 @@ export function Services() {
                 {...(s.external
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
-                className="relative mt-6 inline-flex items-center gap-1 text-sm font-medium text-gold transition-colors hover:text-gold-light"
+                className="relative mt-6 inline-flex items-center gap-1 text-sm font-medium text-plum transition-colors hover:text-plum-light"
               >
                 Learn more <span aria-hidden>→</span>
               </a>

@@ -10,9 +10,9 @@ export function FullWidthImage() {
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-charcoal/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-cream/95 via-cream/50 to-transparent" />
       <blockquote className="absolute inset-0 flex items-center justify-center px-6 text-center">
-        <p className="max-w-3xl font-[family-name:var(--font-cormorant)] text-[clamp(1.35rem,3vw,2rem)] font-light italic leading-snug text-cream drop-shadow-sm">
+        <p className="max-w-3xl font-[family-name:var(--font-cormorant)] text-[clamp(1.35rem,3vw,2rem)] font-light italic leading-snug text-charcoal drop-shadow-[0_1px_12px_rgba(250,246,241,0.9)]">
           &ldquo;I always go around the corner — so I can only look forward.&rdquo;
         </p>
       </blockquote>

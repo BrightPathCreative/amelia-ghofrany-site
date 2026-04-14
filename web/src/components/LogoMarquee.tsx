@@ -22,12 +22,8 @@ const logos: { src: string; alt: string }[] = [
 ];
 
 export function LogoMarquee() {
-  const track = [...logos, ...logos];
   return (
-    <section className="relative overflow-hidden bg-cream py-20 md:py-[7rem]">
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-[2] w-24 bg-gradient-to-r from-cream to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-[2] w-24 bg-gradient-to-l from-cream to-transparent" />
-
+    <section className="bg-cream py-20 md:py-[7rem]">
       <div className="reveal mx-auto max-w-[1100px] px-6 text-center md:px-8">
         <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold">
           Trusted Experience
@@ -41,23 +37,21 @@ export function LogoMarquee() {
         </p>
       </div>
 
-      <div className="relative mt-12">
-        <div className="marquee-track flex w-max items-center gap-12 pr-12 md:gap-16 md:pr-16">
-          {track.map((logo, i) => (
-            <div
-              key={`${logo.src}-${i}`}
-              className="group relative h-[44px] w-[min(152px,36vw)] shrink-0 opacity-80 grayscale transition duration-300 hover:scale-105 hover:opacity-100 hover:grayscale-0 md:h-[48px] md:w-[168px]"
-            >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                fill
-                className="object-contain object-center"
-                sizes="168px"
-              />
-            </div>
-          ))}
-        </div>
+      <div className="mx-auto mt-12 grid max-w-[1100px] grid-cols-2 items-center justify-items-center gap-x-6 gap-y-10 px-6 sm:grid-cols-3 md:grid-cols-4 md:gap-x-8 md:px-8 lg:grid-cols-6">
+        {logos.map((logo) => (
+          <div
+            key={logo.src}
+            className="group relative h-[44px] w-full max-w-[168px] opacity-85 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 md:h-[48px]"
+          >
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              fill
+              className="object-contain object-center"
+              sizes="(max-width: 640px) 45vw, 168px"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
