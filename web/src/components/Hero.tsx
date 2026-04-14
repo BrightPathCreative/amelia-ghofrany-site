@@ -77,8 +77,8 @@ export function Hero() {
           />
           <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-gold/30 shadow-xl">
             <Image
-              src="/images/hero-portrait.jpg"
-              alt="Amelia Ghofrany — professional portrait"
+              src="/images/travel-02.jpg"
+              alt="Amelia Ghofrany — leadership and travel"
               fill
               className="object-cover transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
               sizes="(max-width: 768px) 90vw, 40vw"

@@ -1,12 +1,24 @@
-const logos = [
-  "IBM",
-  "Fujitsu",
-  "DXC",
-  "Bupa",
-  "NAB",
-  "Telstra",
-  "Deloitte",
-  "Accenture",
+import Image from "next/image";
+
+const logos: { src: string; alt: string }[] = [
+  { src: "/images/logos/ato.png", alt: "Australian Taxation Office" },
+  { src: "/images/logos/australia-post.jpeg", alt: "Australia Post" },
+  { src: "/images/logos/defence-force.png", alt: "Australian Defence Force" },
+  { src: "/images/logos/bupa.png", alt: "Bupa" },
+  { src: "/images/logos/commonwealth-bank.png", alt: "Commonwealth Bank" },
+  { src: "/images/logos/department-veterans-affairs.png", alt: "Department of Veterans' Affairs" },
+  { src: "/images/logos/fujitsu.png", alt: "Fujitsu" },
+  { src: "/images/logos/ge.jpeg", alt: "GE" },
+  { src: "/images/logos/ibm.jpg", alt: "IBM" },
+  { src: "/images/logos/jurlique.jpg", alt: "Jurlique" },
+  { src: "/images/logos/kiwi-bank.png", alt: "Kiwibank" },
+  { src: "/images/logos/myer.png", alt: "Myer" },
+  { src: "/images/logos/nab.png", alt: "NAB" },
+  { src: "/images/logos/ncver.png", alt: "NCVER" },
+  { src: "/images/logos/qantas.png", alt: "Qantas" },
+  { src: "/images/logos/tas-networks.png", alt: "TasNetworks" },
+  { src: "/images/logos/telstra.png", alt: "Telstra" },
+  { src: "/images/logos/txc-tech.jpg", alt: "TXC Technology" },
 ];
 
 export function LogoMarquee() {
@@ -24,18 +36,25 @@ export function LogoMarquee() {
           Companies I Have Worked With
         </h2>
         <p className="mx-auto mt-3 max-w-lg text-sm text-taupe">
-          Replace placeholders with transparent PNG or SVG logos (max height 42px).
+          Organisations across finance, technology, government, retail, and professional
+          services.
         </p>
       </div>
 
       <div className="relative mt-12">
-        <div className="marquee-track flex w-max gap-16 pr-16">
-          {track.map((name, i) => (
+        <div className="marquee-track flex w-max items-center gap-12 pr-12 md:gap-16 md:pr-16">
+          {track.map((logo, i) => (
             <div
-              key={`${name}-${i}`}
-              className="flex h-[42px] min-w-[120px] items-center justify-center rounded border border-gold/15 bg-warm-white/60 px-6 text-sm font-medium text-charcoal/45 grayscale transition-all duration-300 hover:scale-105 hover:text-charcoal/85 hover:grayscale-0"
+              key={`${logo.src}-${i}`}
+              className="group relative h-[44px] w-[min(152px,36vw)] shrink-0 opacity-80 grayscale transition duration-300 hover:scale-105 hover:opacity-100 hover:grayscale-0 md:h-[48px] md:w-[168px]"
             >
-              {name}
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                fill
+                className="object-contain object-center"
+                sizes="168px"
+              />
             </div>
           ))}
         </div>

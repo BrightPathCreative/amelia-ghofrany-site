@@ -1,15 +1,31 @@
 import Image from "next/image";
 
 const gallery = [
-  { src: "/images/travel-01.jpg", alt: "Travel landscape", className: "md:col-span-2 aspect-[16/9]" },
-  { src: "/images/travel-02.jpg", alt: "Travel portrait", className: "aspect-[3/4]" },
-  { src: "/images/travel-03.jpg", alt: "Culture and food", className: "aspect-square" },
-  { src: "/images/travel-04.jpg", alt: "Adventure", className: "md:col-span-2 aspect-[16/9]" },
+  {
+    src: "/images/lifestyle-wide.jpg",
+    alt: "Amelia — immersive moments between boardrooms and destinations",
+    className: "md:col-span-2 aspect-[16/9]",
+  },
+  {
+    src: "/images/hero-portrait.jpg",
+    alt: "Amelia Ghofrany — portrait",
+    className: "aspect-[3/4]",
+  },
+  {
+    src: "/images/travel-03.jpg",
+    alt: "Culture, connection, and curiosity abroad",
+    className: "aspect-square",
+  },
+  {
+    src: "/images/travel-04.jpg",
+    alt: "Adventure and exploration",
+    className: "md:col-span-2 aspect-[16/9]",
+  },
 ];
 
 export function BeyondBoardroom() {
   return (
-    <section className="bg-cream py-20 md:py-[8rem]">
+    <section id="beyond" className="bg-cream py-20 md:py-[8rem]">
       <div className="mx-auto max-w-[1100px] px-6 md:px-8">
         <div className="reveal mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-gold">
@@ -19,9 +35,9 @@ export function BeyondBoardroom() {
             A curious traveller &amp; global citizen.
           </h2>
           <p className="mt-6 text-text-secondary">
-            Each place I&apos;ve visited has shaped how I see the world and how
-            I lead, build, and connect — with empathy, openness, and a sense of
-            adventure.
+            The same curiosity I bring to consulting and mentoring shows up
+            when I travel — new places sharpen how I see the world, how I lead,
+            and how I connect.
           </p>
         </div>
 

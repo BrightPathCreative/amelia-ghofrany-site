@@ -10,7 +10,7 @@ const services = [
     n: "02",
     title: "Executive Coaching",
     body: "I coach ambitious leaders and professionals who are successful — but ready for more clarity, direction, and alignment in their career and life.",
-    href: "#coaching",
+    href: "#contact",
     external: false,
   },
   {

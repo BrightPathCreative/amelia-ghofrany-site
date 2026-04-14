@@ -3,18 +3,18 @@ import Image from "next/image";
 const items = [
   {
     src: "/images/lifestyle-consulting.jpg",
-    alt: "Collaboration and consulting",
-    caption: "Building what matters.",
+    alt: "Amelia in a strategic consulting and private-meeting context",
+    caption: "Boardrooms & private meetings.",
   },
   {
     src: "/images/speaking-event.jpg",
-    alt: "Speaking at an event",
-    caption: "Sharing the stage.",
+    alt: "Amelia facilitating a workshop and speaking engagement",
+    caption: "Workshops, stages & mentoring.",
   },
   {
     src: "/images/travel-lifestyle.jpg",
-    alt: "Travel and exploration",
-    caption: "Exploring, always.",
+    alt: "Amelia travelling — study and exploration on the road",
+    caption: "Travel, focus & new perspectives.",
   },
 ];
 
@@ -22,6 +22,9 @@ export function ImageStrip() {
   return (
     <section className="relative overflow-hidden bg-cream py-16 md:py-24">
       <div className="mx-auto max-w-[1100px] px-6 md:px-8">
+        <p className="mb-10 text-center text-xs font-medium uppercase tracking-[0.22em] text-gold">
+          Where the work happens
+        </p>
         <div className="grid gap-6 md:grid-cols-3 md:gap-4">
           {items.map((item, i) => (
             <figure

@@ -1,6 +1,5 @@
 import { About } from "@/components/About";
 import { BeyondBoardroom } from "@/components/BeyondBoardroom";
-import { Coaching } from "@/components/Coaching";
 import { ContactCTA } from "@/components/ContactCTA";
 import { Footer } from "@/components/Footer";
 import { FullWidthImage } from "@/components/FullWidthImage";
@@ -19,7 +18,6 @@ export default function Home() {
       <LogoMarquee />
       <Services />
       <FullWidthImage />
-      <Coaching />
       <BeyondBoardroom />
       <Testimonials />
       <ContactCTA />
