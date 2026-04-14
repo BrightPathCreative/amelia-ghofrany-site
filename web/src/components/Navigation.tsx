@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const logoSrc = "/images/logos/AG%20Logo.png";
+const logoLightBg = "/images/logos/AG%20Logo.png";
+const logoTransparent = "/images/logos/amelia-ghofrany-logo-transparent.png";
 
 const links = [
   { href: "#about", label: "About" },
@@ -44,16 +45,13 @@ export function Navigation() {
         <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-5 md:px-8">
           <Link
             href="#"
-            className={`relative flex h-10 w-[min(220px,54vw)] shrink-0 items-center rounded-sm md:h-11 md:w-[240px] ${
-              onDarkHero
-                ? "bg-brand-grey/92 px-3 shadow-sm ring-1 ring-white/10 backdrop-blur-sm md:px-4"
-                : ""
-            }`}
+            className="relative flex h-10 w-[min(220px,54vw)] shrink-0 items-center md:h-11 md:w-[240px]"
             onClick={() => setOpen(false)}
           >
-            <span className="relative block h-7 w-full md:h-8">
+            <span className="relative block h-8 w-full md:h-9">
               <Image
-                src={logoSrc}
+                key={onDarkHero ? "navy" : "light"}
+                src={onDarkHero ? logoTransparent : logoLightBg}
                 alt="Amelia Ghofrany"
                 fill
                 className="object-contain object-left"
