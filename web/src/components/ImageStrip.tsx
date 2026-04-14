@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const items = [
   {
-    src: "/images/lifestyle-consulting.jpg",
-    alt: "Amelia in a strategic consulting and private-meeting context",
-    caption: "Boardrooms & private meetings.",
+    src: "/images/amelia_cafe_melbourne.jpg",
+    alt: "Amelia at a Melbourne café — conversation and connection",
+    caption: "Melbourne — ideas over coffee.",
   },
   {
-    src: "/images/speaking-event.jpg",
-    alt: "Amelia facilitating a workshop and speaking engagement",
-    caption: "Workshops, stages & mentoring.",
+    src: "/images/amelia_melbourne_laneway.jpg",
+    alt: "Amelia in a Melbourne laneway",
+    caption: "At home in the city.",
   },
   {
-    src: "/images/travel-lifestyle.jpg",
-    alt: "Amelia travelling — study and exploration on the road",
-    caption: "Travel, focus & new perspectives.",
+    src: "/images/amelia_journaling_rooftop.jpg",
+    alt: "Amelia journaling on a rooftop",
+    caption: "Reflection, study & intention.",
   },
 ];
 

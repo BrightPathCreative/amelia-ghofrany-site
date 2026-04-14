@@ -2,23 +2,23 @@ import Image from "next/image";
 
 const gallery = [
   {
-    src: "/images/lifestyle-wide.jpg",
-    alt: "Amelia — immersive moments between boardrooms and destinations",
+    src: "/images/amelia_pink_mosque_persia.jpg",
+    alt: "Pink mosque architecture in Persia",
     className: "md:col-span-2 aspect-[16/9]",
   },
   {
-    src: "/images/hero-portrait.jpg",
-    alt: "Amelia Ghofrany — portrait",
+    src: "/images/amelia_journaling_rooftop.jpg",
+    alt: "Amelia journaling on a rooftop",
     className: "aspect-[3/4]",
   },
   {
-    src: "/images/travel-03.jpg",
-    alt: "Culture, connection, and curiosity abroad",
+    src: "/images/amelia_cafe_melbourne.jpg",
+    alt: "Amelia at a Melbourne café",
     className: "aspect-square",
   },
   {
-    src: "/images/travel-04.jpg",
-    alt: "Adventure and exploration",
+    src: "/images/amelia_melbourne_laneway.jpg",
+    alt: "Melbourne laneway — local texture and light",
     className: "md:col-span-2 aspect-[16/9]",
   },
 ];

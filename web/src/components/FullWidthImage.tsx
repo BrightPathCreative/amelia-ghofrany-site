@@ -4,8 +4,8 @@ export function FullWidthImage() {
   return (
     <section className="relative h-[50vh] min-h-[280px] w-full overflow-hidden">
       <Image
-        src="/images/travel-01.jpg"
-        alt="Wide landscape — journey, horizons, and time between meetings"
+        src="/images/amelia_persia_bazaar.jpg"
+        alt="A Persian bazaar — travel and perspective"
         fill
         className="object-cover"
         sizes="100vw"

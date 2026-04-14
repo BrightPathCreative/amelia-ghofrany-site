@@ -10,7 +10,7 @@ export function Testimonials() {
         <div className="mt-10 flex flex-col items-center gap-8 rounded-sm border border-gold/15 bg-cream/50 p-10 text-center md:flex-row md:text-left">
           <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-gold/30">
             <Image
-              src="/images/testimonial-01.jpg"
+              src="/images/amelia_cafe_melbourne.jpg"
               alt=""
               fill
               className="object-cover"
