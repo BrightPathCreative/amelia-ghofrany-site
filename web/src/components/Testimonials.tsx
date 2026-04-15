@@ -8,12 +8,12 @@ export function Testimonials() {
           Kind Words
         </p>
         <div className="mt-10 flex flex-col items-center gap-8 rounded-sm border border-brand-taupe/25 bg-white/50 p-10 text-center backdrop-blur-sm md:flex-row md:text-left">
-          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-brand-taupe/35">
+          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-brand-taupe/35 bg-brand-grey">
             <Image
               src="/images/amelia_cafe_melbourne.jpg"
               alt=""
               fill
-              className="object-cover"
+              className="object-contain object-center"
               sizes="80px"
             />
           </div>

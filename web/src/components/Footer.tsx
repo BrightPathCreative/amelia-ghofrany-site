@@ -54,12 +54,6 @@ export function Footer() {
           >
             Instagram
           </a>
-          <a
-            href="mailto:hello@example.com"
-            className="transition-colors hover:text-brand-taupe"
-          >
-            Email
-          </a>
         </div>
       </div>
       <div className="mx-auto mt-5 max-w-[1100px] border-t border-brand-taupe/15 px-6 pt-5 text-center text-xs text-brand-grey/60 md:px-8">

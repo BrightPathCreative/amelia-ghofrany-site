@@ -31,12 +31,12 @@ export function ImageStrip() {
               key={item.src}
               className={`reveal-scale group ${i === 1 ? "md:mt-10" : i === 2 ? "md:mt-5" : ""}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-brand-taupe/30 shadow-md">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-sm border border-brand-taupe/30 bg-brand-grey shadow-md">
                 <Image
                   src={item.src}
                   alt={item.alt}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.02]"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>

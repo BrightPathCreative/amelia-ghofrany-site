@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useScroll } from "@/components/scroll";
 
-const logoSrc = "/images/logos/AG%20Logo.png";
+const logoSrc = "/images/logos/amelia-ghofrany-logo-transparent.png";
 
 const links = [
   { href: "#about", label: "About" },
@@ -13,6 +14,7 @@ const links = [
 ];
 
 export function Navigation() {
+  const { scrollToTopSmooth } = useScroll();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -24,12 +26,16 @@ export function Navigation() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-brand-taupe/15 bg-brand-grey/90 shadow-sm backdrop-blur-md">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-brand-taupe/20 bg-brand-navy shadow-sm backdrop-blur-md">
         <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-2.5 md:px-8 md:py-3">
           <Link
             href="#"
             className="relative flex h-11 w-[min(280px,72vw)] shrink-0 items-center md:h-[52px] md:w-[min(320px,42vw)]"
-            onClick={() => setOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToTopSmooth();
+              setOpen(false);
+            }}
           >
             <span className="relative block h-full w-full">
               <Image
@@ -48,7 +54,7 @@ export function Navigation() {
               <a
                 key={l.href}
                 href={l.href}
-                className="nav-link text-sm font-medium uppercase tracking-[0.18em] text-brand-black/80"
+                className="nav-link text-sm font-medium uppercase tracking-[0.18em] text-brand-grey/90 hover:text-brand-grey"
               >
                 {l.label}
               </a>
@@ -69,18 +75,18 @@ export function Navigation() {
             onClick={() => setOpen((v) => !v)}
           >
             <span
-              className={`block h-0.5 w-6 bg-brand-black transition-transform ${
-                open ? "translate-y-2 rotate-45" : ""
+              className={`block h-0.5 w-6 transition-transform ${
+                open ? "translate-y-2 rotate-45 bg-brand-black" : "bg-brand-grey"
               }`}
             />
             <span
-              className={`block h-0.5 w-6 bg-brand-black transition-opacity ${
-                open ? "opacity-0" : ""
+              className={`block h-0.5 w-6 transition-opacity ${
+                open ? "opacity-0" : "bg-brand-grey"
               }`}
             />
             <span
-              className={`block h-0.5 w-6 bg-brand-black transition-transform ${
-                open ? "-translate-y-2 -rotate-45" : ""
+              className={`block h-0.5 w-6 transition-transform ${
+                open ? "-translate-y-2 -rotate-45 bg-brand-black" : "bg-brand-grey"
               }`}
             />
           </button>

@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 :root {
+  /* Back to top progress ring (warm gold; pair with navy button) */
+  --back-to-top-ring: #b89a5e;
+
   /* Brand — Amelia Ghofrany */
   --brand-navy: #111f39;
   --brand-grey: #e3e3e3;

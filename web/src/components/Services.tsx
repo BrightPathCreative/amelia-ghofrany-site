@@ -1,41 +1,57 @@
-const services = [
+import type { LucideIcon } from "lucide-react";
+import {
+  Compass,
+  Cpu,
+  Mic,
+  RefreshCw,
+  Sprout,
+  UserRound,
+} from "lucide-react";
+
+const services: {
+  title: string;
+  body: string;
+  href: string;
+  external: boolean;
+  Icon: LucideIcon;
+}[] = [
   {
-    n: "01",
+    Icon: Compass,
     title: "Strategic Consulting",
     body: "I advise SMEs and business leaders on strategy, business transformation, scaling for growth, and operational improvement through CompassPoint Advisory.",
     href: "https://compasspoint.vercel.app/services",
     external: true,
   },
   {
-    n: "02",
+    Icon: UserRound,
     title: "Executive Coaching",
     body: "I coach ambitious leaders and professionals who are successful — but ready for more clarity, direction, and alignment in their career and life.",
     href: "#contact",
     external: false,
   },
   {
-    n: "03",
+    Icon: Mic,
     title: "Speaking & Workshops",
     body: "Available for keynotes, panel discussions, workshops and podcasts — sharing insights on women in leadership, business growth, and driving meaningful change.",
     href: "#contact",
     external: false,
   },
   {
-    n: "04",
+    Icon: Cpu,
     title: "AI & Digital Transformation",
     body: "Practical, high-impact AI opportunities and a digital transformation roadmap right-sized for your business — not a bloated enterprise playbook.",
     href: "https://compasspoint.vercel.app",
     external: true,
   },
   {
-    n: "05",
+    Icon: RefreshCw,
     title: "Change Leadership",
     body: "Human-centred change management for restructures, technology rollouts, and culture shifts — because transformation is ultimately about people.",
     href: "https://compasspoint.vercel.app",
     external: true,
   },
   {
-    n: "06",
+    Icon: Sprout,
     title: "Investing & Mentoring",
     body: "I invest in and mentor early-stage founders building purpose-driven businesses — bringing strategic guidance, connections, and real operational experience.",
     href: "#contact",
@@ -66,11 +82,15 @@ export function Services() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {services.map((s) => (
             <article
-              key={s.n}
+              key={s.title}
               className="service-card service-card-anim group relative overflow-hidden rounded-sm border border-brand-taupe/20 bg-white/80 p-8 shadow-sm backdrop-blur-sm"
             >
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-blue/[0.08] via-transparent to-brand-navy/[0.06] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              <p className="relative text-5xl font-light text-brand-taupe/35">{s.n}</p>
+              <s.Icon
+                className="relative h-9 w-9 text-brand-taupe/45 transition-colors duration-500 group-hover:text-brand-navy/70"
+                strokeWidth={1.25}
+                aria-hidden
+              />
               <h3 className="relative mt-4 font-display text-2xl font-semibold text-brand-black">
                 {s.title}
               </h3>

@@ -3,29 +3,11 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function SiteInit() {
-  useEffect(() => {
-    const lenis = new Lenis({ lerp: 0.08, wheelMultiplier: 1.4 });
-    lenis.on("scroll", ScrollTrigger.update);
-
-    let rafId = 0;
-    function raf(time: number) {
-      lenis.raf(time);
-      rafId = requestAnimationFrame(raf);
-    }
-    rafId = requestAnimationFrame(raf);
-
-    return () => {
-      cancelAnimationFrame(rafId);
-      lenis.destroy();
-    };
-  }, []);
-
   useGSAP(
     () => {
       const tl = gsap.timeline({ delay: 0.3 });

@@ -75,12 +75,12 @@ export function Hero() {
             className="pointer-events-none absolute -right-4 -top-6 h-[88%] w-[72%] rounded-sm border border-brand-taupe/35"
             aria-hidden
           />
-          <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-brand-taupe/35 shadow-xl shadow-black/25">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25">
             <Image
               src="/images/amelia_speaking_outdoor.jpg"
               alt="Amelia Ghofrany speaking at an outdoor event"
               fill
-              className="object-cover transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
+              className="object-contain object-center transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
               sizes="(max-width: 768px) 90vw, 40vw"
               priority
             />

@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
 import { CursorGlow } from "@/components/CursorGlow";
 import { SiteInit } from "@/components/SiteInit";
-import { BackToTop } from "@/components/BackToTop";
 import { Navigation } from "@/components/Navigation";
+import {
+  BackToTopButton,
+  ScrollProvider,
+  ScrollToTop,
+} from "@/components/scroll";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -44,12 +49,15 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="font-sans min-h-full flex flex-col bg-brand-grey text-brand-black">
-        <NoiseOverlay />
-        <CursorGlow />
-        <SiteInit />
-        <Navigation />
-        {children}
-        <BackToTop />
+        <ScrollProvider>
+          <ScrollToTop />
+          <BackToTopButton />
+          <NoiseOverlay />
+          <CursorGlow />
+          <SiteInit />
+          <Navigation />
+          {children}
+        </ScrollProvider>
       </body>
     </html>
   );

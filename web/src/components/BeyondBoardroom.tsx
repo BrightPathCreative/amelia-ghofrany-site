@@ -95,13 +95,13 @@ function GalleryImg({
 }) {
   return (
     <div
-      className={`group relative w-full overflow-hidden rounded border border-brand-taupe/25 shadow-md ${className}`}
+      className={`group relative w-full overflow-hidden rounded border border-brand-taupe/25 bg-brand-grey shadow-md ${className}`}
     >
       <Image
         src={src}
         alt={alt}
         fill
-        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.03]"
         sizes="(max-width: 768px) 100vw, 33vw"
       />
     </div>
