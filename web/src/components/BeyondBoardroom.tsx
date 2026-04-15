@@ -4,24 +4,20 @@ const gallery = [
   {
     src: "/images/amelia_pink_mosque_persia.jpg",
     alt: "Pink mosque architecture in Persia",
-    className: "md:col-span-2 aspect-[16/9]",
   },
   {
     src: "/images/amelia_journaling_rooftop.jpg",
     alt: "Amelia journaling on a rooftop",
-    className: "aspect-[3/4]",
   },
   {
     src: "/images/amelia_cafe_melbourne.jpg",
     alt: "Amelia at a Melbourne café",
-    className: "aspect-square",
   },
   {
     src: "/images/amelia_melbourne_laneway.jpg",
     alt: "Melbourne laneway — local texture and light",
-    className: "md:col-span-2 aspect-[16/9]",
   },
-];
+] as const;
 
 export function BeyondBoardroom() {
   return (
@@ -48,18 +44,22 @@ export function BeyondBoardroom() {
           <TravelStat n={1} label="Bucket List (Antarctica)" />
         </div>
 
-        <div className="mx-auto mt-12 grid max-w-[920px] gap-3 md:grid-cols-3 md:gap-4">
-          <div className="md:col-span-2">
-            <GalleryImg {...gallery[0]} />
-          </div>
-          <div>
-            <GalleryImg {...gallery[1]} />
-          </div>
-          <div>
-            <GalleryImg {...gallery[2]} />
-          </div>
-          <div className="md:col-span-2">
-            <GalleryImg {...gallery[3]} />
+        <div className="mx-auto mt-12 max-w-[min(20rem,88vw)] overflow-hidden rounded-sm border border-brand-navy/45 shadow-[0_10px_26px_-6px_rgba(17,31,57,0.2)] md:max-w-[22rem]">
+          <div className="grid grid-cols-2 gap-0">
+            {gallery.map((item) => (
+              <div
+                key={item.src}
+                className="group relative aspect-[3/4] overflow-hidden bg-brand-navy/10"
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                  sizes="(max-width: 768px) 44vw, 176px"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -84,26 +84,3 @@ function TravelStat({ n, label }: { n: number; label: string }) {
   );
 }
 
-function GalleryImg({
-  src,
-  alt,
-  className,
-}: {
-  src: string;
-  alt: string;
-  className: string;
-}) {
-  return (
-    <div
-      className={`group relative w-full overflow-hidden rounded border border-brand-taupe/25 bg-brand-grey shadow-md ${className}`}
-    >
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.03]"
-        sizes="(max-width: 768px) 100vw, (max-width: 1100px) 45vw, 400px"
-      />
-    </div>
-  );
-}
