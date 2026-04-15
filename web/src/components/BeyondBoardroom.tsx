@@ -48,7 +48,7 @@ export function BeyondBoardroom() {
           <TravelStat n={1} label="Bucket List (Antarctica)" />
         </div>
 
-        <div className="mt-16 grid gap-4 md:grid-cols-3 md:gap-5">
+        <div className="mx-auto mt-12 grid max-w-[920px] gap-3 md:grid-cols-3 md:gap-4">
           <div className="md:col-span-2">
             <GalleryImg {...gallery[0]} />
           </div>
@@ -102,7 +102,7 @@ function GalleryImg({
         alt={alt}
         fill
         className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.03]"
-        sizes="(max-width: 768px) 100vw, 33vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1100px) 45vw, 400px"
       />
     </div>
   );

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function FullWidthImage() {
   return (
-    <section className="relative h-[50vh] min-h-[280px] w-full overflow-hidden bg-brand-navy">
+    <section className="relative h-[min(36vh,340px)] min-h-[200px] w-full overflow-hidden bg-brand-navy md:h-[min(38vh,380px)]">
       <Image
         src="/images/amelia_persia_bazaar.jpg"
         alt="A Persian bazaar — travel and perspective"

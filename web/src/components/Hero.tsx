@@ -70,18 +70,21 @@ export function Hero() {
           </div>
         </div>
 
-        <div id="hero-image-wrap" className="relative mx-auto w-full max-w-md md:max-w-none">
+        <div
+          id="hero-image-wrap"
+          className="relative mx-auto w-full max-w-[min(100%,18rem)] sm:max-w-xs md:max-w-[min(100%,20rem)]"
+        >
           <div
             className="pointer-events-none absolute -right-4 -top-6 h-[88%] w-[72%] rounded-sm border border-brand-taupe/35"
             aria-hidden
           />
-          <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25">
+          <div className="relative aspect-[3/4] max-h-[min(72svh,28rem)] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25 md:max-h-[min(70svh,26rem)]">
             <Image
               src="/images/amelia_speaking_outdoor.jpg"
               alt="Amelia Ghofrany speaking at an outdoor event"
               fill
               className="object-contain object-center transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
-              sizes="(max-width: 768px) 90vw, 40vw"
+              sizes="(max-width: 768px) 288px, 320px"
               priority
             />
           </div>

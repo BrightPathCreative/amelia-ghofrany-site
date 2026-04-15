@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function Testimonials() {
   return (
     <section className="surface-linen relative py-20 md:py-[7rem]">
@@ -7,17 +5,14 @@ export function Testimonials() {
         <p className="text-center text-xs font-medium uppercase tracking-widest text-brand-taupe">
           Kind Words
         </p>
-        <div className="mt-10 flex flex-col items-center gap-8 rounded-sm border border-brand-taupe/25 bg-white/50 p-10 text-center backdrop-blur-sm md:flex-row md:text-left">
-          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-brand-taupe/35 bg-brand-grey">
-            <Image
-              src="/images/amelia_cafe_melbourne.jpg"
-              alt=""
-              fill
-              className="object-contain object-center"
-              sizes="80px"
-            />
+        <div className="mt-10 flex flex-col items-center gap-8 rounded-sm border border-brand-taupe/25 bg-white/50 p-8 text-center backdrop-blur-sm md:flex-row md:items-start md:gap-10 md:p-10 md:text-left">
+          <div
+            className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-brand-taupe/35 bg-brand-navy/5 font-display text-sm font-semibold tracking-wide text-brand-navy"
+            aria-hidden
+          >
+            AG
           </div>
-          <blockquote>
+          <blockquote className="min-w-0 flex-1">
             <p className="font-display text-xl font-normal leading-relaxed text-brand-black md:text-2xl">
               &ldquo;Amelia always has such great insight, ideas and tools to help
               think about approaching situations and life events in different
