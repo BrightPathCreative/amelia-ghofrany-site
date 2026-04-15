@@ -42,20 +42,20 @@ export function Navigation() {
             : "border-b border-transparent bg-transparent"
         }`}
       >
-        <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-5 md:px-8">
+        <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-2.5 md:px-8 md:py-3">
           <Link
             href="#"
-            className="relative flex h-10 w-[min(220px,54vw)] shrink-0 items-center md:h-11 md:w-[240px]"
+            className="relative flex h-11 w-[min(280px,72vw)] shrink-0 items-center md:h-[52px] md:w-[min(320px,42vw)]"
             onClick={() => setOpen(false)}
           >
-            <span className="relative block h-8 w-full md:h-9">
+            <span className="relative block h-full w-full">
               <Image
                 key={onDarkHero ? "navy" : "light"}
                 src={onDarkHero ? logoTransparent : logoLightBg}
                 alt="Amelia Ghofrany"
                 fill
                 className="object-contain object-left"
-                sizes="240px"
+                sizes="(max-width: 768px) 72vw, 320px"
                 priority
               />
             </span>
