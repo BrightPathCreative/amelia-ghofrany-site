@@ -1,24 +1,5 @@
 import Image from "next/image";
 
-const gallery = [
-  {
-    src: "/images/amelia_pink_mosque_persia.jpg",
-    alt: "Pink mosque architecture in Persia",
-  },
-  {
-    src: "/images/amelia_journaling_rooftop.jpg",
-    alt: "Amelia journaling on a rooftop",
-  },
-  {
-    src: "/images/amelia_cafe_melbourne.jpg",
-    alt: "Amelia at a Melbourne café",
-  },
-  {
-    src: "/images/amelia_melbourne_laneway.jpg",
-    alt: "Melbourne laneway — local texture and light",
-  },
-] as const;
-
 export function BeyondBoardroom() {
   return (
     <section id="beyond" className="surface-linen relative py-20 md:py-[8rem]">
@@ -44,22 +25,15 @@ export function BeyondBoardroom() {
           <TravelStat n={1} label="Bucket List (Antarctica)" />
         </div>
 
-        <div className="mx-auto mt-12 max-w-[min(20rem,88vw)] overflow-hidden rounded-sm border border-brand-navy/45 shadow-[0_10px_26px_-6px_rgba(17,31,57,0.2)] md:max-w-[22rem]">
-          <div className="grid grid-cols-2 gap-0">
-            {gallery.map((item) => (
-              <div
-                key={item.src}
-                className="group relative aspect-[3/4] overflow-hidden bg-brand-navy/10"
-              >
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-                  sizes="(max-width: 768px) 44vw, 176px"
-                />
-              </div>
-            ))}
+        <div className="mx-auto mt-12 max-w-[min(22rem,92vw)] overflow-hidden rounded-sm border border-brand-navy/45 shadow-[0_10px_26px_-6px_rgba(17,31,57,0.2)] md:max-w-[24rem]">
+          <div className="group relative aspect-[3/4] overflow-hidden bg-brand-navy/10">
+            <Image
+              src="/images/amelia_journaling_rooftop.jpg"
+              alt="Amelia writing in her journal on a rooftop"
+              fill
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+              sizes="(max-width: 768px) 92vw, 384px"
+            />
           </div>
         </div>
       </div>
