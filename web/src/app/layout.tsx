@@ -4,6 +4,7 @@ import "./globals.css";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
 import { CursorGlow } from "@/components/CursorGlow";
 import { SiteInit } from "@/components/SiteInit";
+import { BackToTop } from "@/components/BackToTop";
 import { Navigation } from "@/components/Navigation";
 
 const playfair = Playfair_Display({
@@ -48,6 +49,7 @@ export default function RootLayout({
         <SiteInit />
         <Navigation />
         {children}
+        <BackToTop />
       </body>
     </html>
   );

@@ -63,7 +63,17 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-5 max-w-[1100px] border-t border-brand-taupe/15 px-6 pt-5 text-center text-xs text-brand-grey/60 md:px-8">
-        <p>Built and maintained by Bright Path Creative</p>
+        <p>
+          Built and maintained by{" "}
+          <a
+            href="https://www.brightpathcreative.com.au"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand-taupe underline-offset-4 transition-colors hover:text-brand-grey"
+          >
+            Bright Path Creative
+          </a>
+        </p>
       </div>
     </footer>
   );
