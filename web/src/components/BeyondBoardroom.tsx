@@ -13,7 +13,7 @@ export function BeyondBoardroom() {
           </h2>
           <p className="mt-6 font-light text-text-secondary">
             The same curiosity I bring to consulting and mentoring shows up
-            when I travel — new places sharpen how I see the world, how I lead,
+            when I travel. New places sharpen how I see the world, how I lead,
             and how I connect.
           </p>
         </div>

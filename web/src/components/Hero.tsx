@@ -38,7 +38,7 @@ export function Hero() {
             className="mt-8 max-w-xl text-[1.05rem] font-light leading-relaxed text-brand-grey/85 md:text-[1.1rem]"
           >
             I partner with ambitious leaders and businesses to navigate
-            complexity, unlock growth, and create lasting impact — grounded in
+            complexity, unlock growth, and create lasting impact, grounded in
             20+ years of enterprise experience and a belief in the power of
             diverse perspectives.
           </p>
@@ -83,7 +83,7 @@ export function Hero() {
               src="/images/amelia_hero_leadership_workshop.png"
               alt="Amelia Ghofrany facilitating a leadership workshop in front of a flip chart"
               fill
-              className="object-contain object-center transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
+              className="object-cover object-[center_28%] transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
               sizes="(max-width: 768px) 288px, 320px"
               priority
             />

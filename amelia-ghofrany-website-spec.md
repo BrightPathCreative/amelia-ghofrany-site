@@ -1,10 +1,10 @@
-# Amelia Ghofrany — Personal Brand Website
+# Amelia Ghofrany: Personal Brand Website
 
-> **Purpose**: A single-page personal brand website for Amelia Ghofrany — investor, entrepreneur, strategic consultant, and coach. This site replaces ameliaghofrany.com.au and sits alongside her advisory business at compasspoint.vercel.app.
+> **Purpose**: A single-page personal brand website for Amelia Ghofrany, investor, entrepreneur, strategic consultant, and coach. This site replaces ameliaghofrany.com.au and sits alongside her advisory business at compasspoint.vercel.app.
 >
 > **Inspiration**: [Janine Allis](https://www.janineallis.com.au/) (aspirational storytelling, strong personal hero), [Julie Fedele](https://www.juliefedele.com/) (editorial elegance, logo bar, coaching programs, warm tone).
 >
-> **Tone**: Classy, approachable, earthy. Warm and human — not corporate. Think luxury editorial meets grounded founder energy.
+> **Tone**: Classy, approachable, earthy. Warm and human, not corporate. Think luxury editorial meets grounded founder energy.
 
 ---
 
@@ -124,7 +124,7 @@ gsap.ticker.lagSmoothing(0);
 ### 1. NAVIGATION (Fixed)
 
 ```
-Logo (left):        "Amelia Ghofrany" — Cormorant Garamond, 500 weight
+Logo (left):        "Amelia Ghofrany", Cormorant Garamond, 500 weight
 Links (right):      About | Services | Coaching | [Work With Me] (CTA button)
 Behaviour:          Transparent on load → frosted cream backdrop-blur on scroll
 Mobile:             Hamburger → full-screen overlay menu
@@ -136,7 +136,7 @@ Mobile:             Hamburger → full-screen overlay menu
 
 **Layout**: Two-column grid (text left, image right). Full viewport height. Warm radial gradient blobs in background.
 
-#### Left Column — Text
+#### Left Column: Text
 
 **Eyebrow**:
 
@@ -158,7 +158,7 @@ to lead with *purpose.*
 
 ```
 I partner with ambitious leaders and businesses to navigate complexity,
-unlock growth, and create lasting impact — grounded in 20+ years of
+unlock growth, and create lasting impact, grounded in 20+ years of
 enterprise experience and a belief in the power of diverse perspectives.
 ```
 
@@ -167,7 +167,7 @@ enterprise experience and a belief in the power of diverse perspectives.
 - Primary: `Book a Discovery Call` → links to [https://calendly.com/ameliaghofrany](https://calendly.com/ameliaghofrany)
 - Secondary: `Explore Services →` (arrow animates right on hover)
 
-#### Right Column — Image
+#### Right Column: Image
 
 ```
 ┌─────────────────────────────┐
@@ -217,7 +217,7 @@ Founder energy.
 **Pull Quote** (cream background, gold left border):
 
 ```
-"Diverse perspectives don't just matter — they're the spark for
+"Diverse perspectives don't just matter; they're the spark for
 creativity, smarter decisions, and long-term success."
 ```
 
@@ -234,34 +234,34 @@ creativity, smarter decisions, and long-term success."
 
 > Numbers animate up (counter) when scrolled into view. Numbers are Cormorant Garamond, plum colour.
 
-#### Right Column — Body Copy
+#### Right Column: Body Copy
 
 ```
 I've spent over 20 years helping organisations lead through complex
-change — bringing people, processes and technology together to deliver
+change, bringing people, processes and technology together to deliver
 sustainable growth, exceptional customer and employee experiences,
 and meaningful impact.
 
-Today, I partner with businesses of all sizes — from ambitious startups
-to large enterprises — to help them transform and scale with purpose.
+Today, I partner with businesses of all sizes, from ambitious startups
+to large enterprises, to help them transform and scale with purpose.
 Through CompassPoint Advisory, I offer practical, forward-thinking
 strategies grounded in real-world experience.
 
-Whether I'm consulting, investing, coaching or mentoring — I bring
+Whether I'm consulting, investing, coaching or mentoring, I bring
 curiosity, courage and a strong belief in inclusive leadership.
 I've built businesses from scratch, advised executive teams, and led
 major digital transformation programs across industries.
 
 Outside of work, I'm a curious traveller and global citizen. I've lived
-on three continents and travelled to 26 countries across six — just
-Antarctica to go.
+on three continents and travelled to 26 countries across six (just
+Antarctica to go).
 ```
 
 > "CompassPoint Advisory" is a link to [https://compasspoint.vercel.app/](https://compasspoint.vercel.app/) styled in plum with gold underline.
 
 ---
 
-### 4. IMAGE FEATURE STRIP — "My World"
+### 4. IMAGE FEATURE STRIP: "My World"
 
 **Layout**: Full-width horizontal strip of lifestyle/experience images. Three images side by side with slight overlap or staggered vertical offset for visual interest.
 
@@ -304,7 +304,7 @@ Image 3: "Exploring, always."
 **Logo track**: Continuous scrolling row of company logos (greyscale, ~45% opacity, full colour on hover).
 
 ```
-LOGO PLACEHOLDERS — Replace with Amelia's saved business logo files:
+LOGO PLACEHOLDERS: Replace with Amelia's saved business logo files:
 
 ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐
 │IBM  │ │Fuji-│ │DXC  │ │Bupa │ │Logo │ │Logo │ │Logo │ │Logo │
@@ -350,18 +350,18 @@ Each card has:
 | #   | Title                       | Description                                                                                                                                                  | Link                               |
 | --- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------- |
 | 01  | Strategic Consulting        | I advise SMEs and business leaders on strategy, business transformation, scaling for growth, and operational improvement through CompassPoint Advisory.      | → compasspoint.vercel.app/services |
-| 02  | Executive Coaching          | I coach ambitious leaders and professionals who are successful — but ready for more clarity, direction, and alignment in their career and life.              | → #coaching                        |
-| 03  | Speaking & Workshops        | Available for keynotes, panel discussions, workshops and podcasts — sharing insights on women in leadership, business growth, and driving meaningful change. | → #contact                         |
-| 04  | AI & Digital Transformation | Practical, high-impact AI opportunities and a digital transformation roadmap right-sized for your business — not a bloated enterprise playbook.              | → compasspoint.vercel.app          |
-| 05  | Change Leadership           | Human-centred change management for restructures, technology rollouts, and culture shifts — because transformation is ultimately about people.               | → compasspoint.vercel.app          |
-| 06  | Investing & Mentoring       | I invest in and mentor early-stage founders building purpose-driven businesses — bringing strategic guidance, connections, and real operational experience.  | → #contact                         |
+| 02  | Executive Coaching          | I coach ambitious leaders and professionals who are successful but ready for more clarity, direction, and alignment in their career and life.              | → #coaching                        |
+| 03  | Speaking & Workshops        | Available for keynotes, panel discussions, workshops and podcasts, sharing insights on women in leadership, business growth, and driving meaningful change. | → #contact                         |
+| 04  | AI & Digital Transformation | Practical, high-impact AI opportunities and a digital transformation roadmap tailored to your business, not a bloated enterprise playbook.              | → compasspoint.vercel.app          |
+| 05  | Change Leadership           | Human-centred change management for restructures, technology rollouts, and culture shifts, because transformation is ultimately about people.               | → compasspoint.vercel.app          |
+| 06  | Investing & Mentoring       | I invest in and mentor early-stage founders building purpose-driven businesses, bringing strategic guidance, connections, and real operational experience.  | → #contact                         |
 
 
 **Card hover behaviour**: Slight lift (translateY -4px), plum gradient overlay fading in, gold border glow.
 
 ---
 
-### 7. IMAGE FEATURE — FULL WIDTH
+### 7. IMAGE FEATURE: FULL WIDTH
 
 A full-width atmospheric image between services and coaching. Creates a breathing moment.
 
@@ -386,7 +386,7 @@ A full-width atmospheric image between services and coaching. Creates a breathin
 ```
 
 > Optional text overlay (centered, Cormorant Garamond, cream):
-> `"I always go around the corner — so I can only look forward."`
+> `"I always go around the corner, so I can only look forward."`
 
 ---
 
@@ -396,7 +396,7 @@ A full-width atmospheric image between services and coaching. Creates a breathin
 
 **Label**: `Coaching Programs`
 **Heading**: `Structured support for your next chapter.`
-**Subtitle**: `If you're thinking "there's more than this" — let's find it.`
+**Subtitle**: `If you're thinking "there's more than this", let's find it.`
 
 **Layout**: Two coaching tier cards side by side.
 
@@ -404,7 +404,7 @@ A full-width atmospheric image between services and coaching. Creates a breathin
 
 ```
 Name:       Bronze
-Tagline:    "I know something needs to change — I just don't know what."
+Tagline:    "I know something needs to change, but I just don't know what."
 
 Ideal For:
 - Corporate professionals feeling stuck or unfulfilled
@@ -420,11 +420,11 @@ What's Included:
 CTA: Book a Discovery Call → calendly.com/ameliaghofrany
 ```
 
-#### Gold Tier (Featured — "Most Popular" badge)
+#### Gold Tier (Featured: "Most Popular" badge)
 
 ```
 Name:       Gold
-Tagline:    "I'm ready for change — but I want to move forward with intention."
+Tagline:    "I'm ready for change, but I want to move forward with intention."
 
 Ideal For:
 - Leaders stepping into executive roles
@@ -445,7 +445,7 @@ CTA: Book a Discovery Call → calendly.com/ameliaghofrany
 
 ---
 
-### 9. BEYOND THE BOARDROOM — TRAVEL & LIFESTYLE
+### 9. BEYOND THE BOARDROOM: TRAVEL & LIFESTYLE
 
 **Background**: `--cream`
 **Layout**: Centered text with stats, flanked by image gallery.
@@ -456,7 +456,7 @@ CTA: Book a Discovery Call → calendly.com/ameliaghofrany
 
 ```
 Each place I've visited has shaped how I see the world and how I lead,
-build, and connect — with empathy, openness, and a sense of adventure.
+build, and connect, with empathy, openness, and a sense of adventure.
 ```
 
 **Stats row** (centered, large numbers):
@@ -467,7 +467,7 @@ build, and connect — with empathy, openness, and a sense of adventure.
 | Countries | Continents | Continents Called Home | Bucket List (Antarctica) |
 
 
-**Travel Image Gallery** — Grid or masonry of travel/lifestyle photos:
+**Travel Image Gallery**: Grid or masonry of travel/lifestyle photos:
 
 ```
 ┌────────────────┐ ┌──────────┐
@@ -511,7 +511,7 @@ build, and connect — with empathy, openness, and a sense of adventure.
 │  │[IMG] │   tools to help think about approaching situations   │
 │  │      │   and life events in different ways."                │
 │  │head- │                                                      │
-│  │shot  │  — Client Name, Title                                │
+│  │shot  │  Client name, title                                  │
 │  │.jpg  │                                                      │
 │  └──────┘                                                      │
 │                                                                │
@@ -540,7 +540,7 @@ meaningful together.
 
 ```
 Whether you're navigating a growth inflection point, ready for a career
-shift, or looking to sharpen your strategy — I'd love to hear from you.
+shift, or looking to sharpen your strategy, I'd love to hear from you.
 ```
 
 **CTA Button**: `Book Your Free Discovery Call` → gold background, plum text, hover lifts with shadow.
@@ -579,16 +579,16 @@ All images Amelia will need to supply. Recommended specs included.
 | #   | Filename                     | Location         | Aspect Ratio         | Description                                                                      |
 | --- | ---------------------------- | ---------------- | -------------------- | -------------------------------------------------------------------------------- |
 | 1   | `hero-portrait.jpg`          | Hero section     | 3:4                  | Professional editorial portrait. Warm natural light, confident and approachable. |
-| 2   | `lifestyle-consulting.jpg`   | Image strip      | 4:3                  | Amelia working/consulting — candid, natural moment.                              |
+| 2   | `lifestyle-consulting.jpg`   | Image strip      | 4:3                  | Amelia working/consulting, candid, natural moment.                              |
 | 3   | `speaking-event.jpg`         | Image strip      | 4:3                  | Amelia speaking at an event, on a panel, or at a workshop.                       |
-| 4   | `travel-lifestyle.jpg`       | Image strip      | 4:3                  | Travel or lifestyle photo — exploring a city, nature, cultural moment.           |
-| 5   | `lifestyle-wide.jpg`         | Full-width break | 21:9                 | Cinematic wide shot — city, café, event, Melbourne laneway. Aspirational mood.   |
-| 6   | `travel-01.jpg`              | Beyond section   | 16:9                 | Travel landscape — dramatic scenery, cityscape, or nature.                       |
-| 7   | `travel-02.jpg`              | Beyond section   | 3:4                  | Travel portrait — Amelia exploring, street scene, or cultural moment.            |
-| 8   | `travel-03.jpg`              | Beyond section   | 1:1                  | Square — food, culture, architecture detail, or candid travel moment.            |
-| 9   | `travel-04.jpg`              | Beyond section   | 16:9                 | Adventure or experience photo — something memorable and personal.                |
+| 4   | `travel-lifestyle.jpg`       | Image strip      | 4:3                  | Travel or lifestyle photo, exploring a city, nature, cultural moment.           |
+| 5   | `lifestyle-wide.jpg`         | Full-width break | 21:9                 | Cinematic wide shot: city, café, event, Melbourne laneway. Aspirational mood.   |
+| 6   | `travel-01.jpg`              | Beyond section   | 16:9                 | Travel landscape: dramatic scenery, cityscape, or nature.                       |
+| 7   | `travel-02.jpg`              | Beyond section   | 3:4                  | Travel portrait: Amelia exploring, street scene, or cultural moment.            |
+| 8   | `travel-03.jpg`              | Beyond section   | 1:1                  | Square: food, culture, architecture detail, or candid travel moment.            |
+| 9   | `travel-04.jpg`              | Beyond section   | 16:9                 | Adventure or experience photo, something memorable and personal.                |
 | 10  | `testimonial-01.jpg`         | Testimonials     | 1:1 (80px)           | Client headshot (circle crop).                                                   |
-| 11+ | `logo-*.png` or `logo-*.svg` | Logo marquee     | Varied (42px height) | Company logos — transparent PNG or SVG, greyscale originals preferred.           |
+| 11+ | `logo-*.png` or `logo-*.svg` | Logo marquee     | Varied (42px height) | Company logos: transparent PNG or SVG, greyscale originals preferred.           |
 
 
 ---
@@ -597,25 +597,25 @@ All images Amelia will need to supply. Recommended specs included.
 
 ### Recommended Stack
 
-- **Framework**: Next.js (App Router) or Astro — either works well for a single-page site
+- **Framework**: Next.js (App Router) or Astro; either works well for a single-page site
 - **Styling**: Tailwind CSS with custom CSS variables, or CSS Modules
 - **Animations**: GSAP + ScrollTrigger (install via npm: `gsap`)
 - **Smooth scroll**: Lenis (optional but recommended: `lenis`)
-- **Fonts**: Google Fonts — Cormorant Garamond + DM Sans
+- **Fonts**: Google Fonts: Cormorant Garamond + DM Sans
 - **Deployment**: Vercel
 
 ### Key Implementation Details
 
-1. **GSAP ScrollTrigger** — register plugin globally, create scroll reveals for `.reveal` / `.reveal-left` / `.reveal-right` / `.reveal-scale` classes
-2. **Logo marquee** — CSS `@keyframes` infinite translateX. Duplicate logo set in DOM for seamless loop. Fade masks via pseudo-elements with gradients.
-3. **Stat counter** — GSAP `textContent` tween from 0 to target, `snap: { textContent: 1 }`, triggered once on scroll
-4. **Hero stagger** — GSAP timeline with sequential delays, runs on page load
-5. **Nav state** — ScrollTrigger watching scroll position > 80px to add `.scrolled` class (backdrop-blur + shadow)
-6. **Image frames** — Decorative offset rectangles (absolute positioned, gold border, low opacity) behind hero and feature images
-7. **Button sweep** — `::before` pseudo-element with plum background, `translateX(-101%)` → `translateX(0)` on hover
-8. **Noise overlay** — Fixed SVG feTurbulence filter at 2.5% opacity over entire body
-9. **Cursor glow** — 300px radial gradient following mouse, only on `(pointer: fine)` devices
-10. **Responsive** — Mobile breakpoint at 768px. Single column layouts, hamburger nav, adjusted padding.
+1. **GSAP ScrollTrigger**: register plugin globally, create scroll reveals for `.reveal` / `.reveal-left` / `.reveal-right` / `.reveal-scale` classes
+2. **Logo marquee**: CSS `@keyframes` infinite translateX. Duplicate logo set in DOM for seamless loop. Fade masks via pseudo-elements with gradients.
+3. **Stat counter**: GSAP `textContent` tween from 0 to target, `snap: { textContent: 1 }`, triggered once on scroll
+4. **Hero stagger**: GSAP timeline with sequential delays, runs on page load
+5. **Nav state**: ScrollTrigger watching scroll position > 80px to add `.scrolled` class (backdrop-blur + shadow)
+6. **Image frames**: Decorative offset rectangles (absolute positioned, gold border, low opacity) behind hero and feature images
+7. **Button sweep**: `::before` pseudo-element with plum background, `translateX(-101%)` → `translateX(0)` on hover
+8. **Noise overlay**: Fixed SVG feTurbulence filter at 2.5% opacity over entire body
+9. **Cursor glow**: 300px radial gradient following mouse, only on `(pointer: fine)` devices
+10. **Responsive**: Mobile breakpoint at 768px. Single column layouts, hamburger nav, adjusted padding.
 
 ### Performance Considerations
 
@@ -680,4 +680,4 @@ ameliaghofrany.com.au/
 
 ---
 
-*This document is a complete build specification. Hand it to Cursor and it has everything it needs — copy, design tokens, animation specs, image requirements, and technical guidance — to build a production-quality personal brand site for Amelia Ghofrany.*
+*This document is a complete build specification. Hand it to Cursor and it has everything it needs: copy, design tokens, animation specs, image requirements, and technical guidance. Use it to build a production-quality personal brand site for Amelia Ghofrany.*

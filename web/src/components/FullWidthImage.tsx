@@ -5,7 +5,7 @@ export function FullWidthImage() {
     >
       <blockquote className="absolute inset-0 flex items-center justify-center px-6 text-center">
         <p className="max-w-3xl font-display text-[clamp(1.35rem,3vw,2rem)] font-normal italic leading-snug text-brand-navy [text-shadow:0_1px_2px_rgba(255,255,255,0.9),0_0_32px_rgba(227,227,227,0.85)]">
-          &ldquo;Clarity names what matters; courage moves it forward — together they
+          &ldquo;Clarity names what matters; courage moves it forward, and together they
           turn strategy into lasting change.&rdquo;
         </p>
       </blockquote>

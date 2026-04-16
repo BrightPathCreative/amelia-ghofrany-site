@@ -3,8 +3,8 @@ import Image from "next/image";
 const items = [
   {
     src: "/images/amelia_cafe_melbourne.jpg",
-    alt: "Amelia at a Melbourne café — conversation and connection",
-    caption: "Melbourne — ideas over coffee.",
+    alt: "Amelia at a Melbourne café, conversation and connection",
+    caption: "Melbourne: ideas over coffee.",
   },
   {
     src: "/images/amelia_melbourne_laneway.jpg",

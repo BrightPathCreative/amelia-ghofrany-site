@@ -18,7 +18,7 @@ export function About() {
           </h2>
 
           <blockquote className="border-l-2 border-brand-taupe bg-white/60 px-6 py-5 text-lg font-light leading-relaxed text-brand-black/85 backdrop-blur-sm">
-            &ldquo;Diverse perspectives don&apos;t just matter — they&apos;re the
+            &ldquo;Diverse perspectives don&apos;t just matter; they&apos;re the
             spark for creativity, smarter decisions, and long-term success.&rdquo;
           </blockquote>
 
@@ -33,13 +33,13 @@ export function About() {
         <div className="reveal-right space-y-6 text-[1.02rem] font-light leading-[1.75] text-text-secondary">
           <p>
             I&apos;ve spent over 20 years helping organisations lead through
-            complex change — bringing people, processes and technology together
+            complex change, bringing people, processes and technology together
             to deliver sustainable growth, exceptional customer and employee
             experiences, and meaningful impact.
           </p>
           <p>
-            Today, I partner with businesses of all sizes — from ambitious
-            startups to large enterprises — to help them transform and scale with
+            Today, I partner with businesses of all sizes, from ambitious
+            startups to large enterprises, to help them transform and scale with
             purpose. Through{" "}
             <a
               href="https://compasspoint.vercel.app/"
@@ -53,7 +53,7 @@ export function About() {
             real-world experience.
           </p>
           <p>
-            Whether I&apos;m consulting, investing, coaching or mentoring — I
+            Whether I&apos;m consulting, investing, coaching or mentoring, I
             bring curiosity, courage and a strong belief in inclusive leadership.
             I&apos;ve built businesses from scratch, advised executive teams, and
             led major digital transformation programs across industries.
@@ -61,7 +61,7 @@ export function About() {
           <p>
             Outside of work, I&apos;m a curious traveller and global citizen.
             I&apos;ve lived on three continents and travelled to 26 countries
-            across six — just Antarctica to go.
+            across six (just Antarctica to go).
           </p>
         </div>
       </div>

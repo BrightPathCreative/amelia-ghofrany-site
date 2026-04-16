@@ -19,7 +19,7 @@ export function Testimonials() {
               ways.&rdquo;
             </p>
             <footer className="mt-6 text-sm text-brand-taupe">
-              — Client name, title{" "}
+              Client name, title{" "}
               <span className="text-text-light">(placeholder)</span>
             </footer>
           </blockquote>

@@ -28,7 +28,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amelia Ghofrany — Investor, Entrepreneur, Coach",
+  title: "Amelia Ghofrany | Investor, Entrepreneur, Coach",
   description:
     "Strategic consultant and coach partnering with ambitious leaders to navigate complexity, unlock growth, and create lasting impact.",
   openGraph: {
