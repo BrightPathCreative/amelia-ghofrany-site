@@ -83,7 +83,7 @@ export function Hero() {
               src="/images/amelia_hero_leadership_workshop.png"
               alt="Amelia Ghofrany facilitating a leadership workshop in front of a flip chart"
               fill
-              className="object-cover object-[center_28%] transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
+              className="pointer-events-none object-cover object-[center_27%] scale-[1.02]"
               sizes="(max-width: 768px) 288px, 320px"
               priority
             />
