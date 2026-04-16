@@ -80,8 +80,8 @@ export function Hero() {
           />
           <div className="relative aspect-[3/4] max-h-[min(72svh,28rem)] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25 md:max-h-[min(70svh,26rem)]">
             <Image
-              src="/images/amelia_speaking_outdoor.jpg"
-              alt="Amelia Ghofrany speaking at an outdoor event"
+              src="/images/amelia_hero_leadership_workshop.png"
+              alt="Amelia Ghofrany facilitating a leadership workshop in front of a flip chart"
               fill
               className="object-contain object-center transition-transform duration-[600ms] ease-out hover:scale-[1.02]"
               sizes="(max-width: 768px) 288px, 320px"
