@@ -25,14 +25,14 @@ export function BeyondBoardroom() {
           <TravelStat n={1} label="Bucket List (Antarctica)" />
         </div>
 
-        <div className="mx-auto mt-12 max-w-[min(22rem,92vw)] overflow-hidden rounded-sm border border-brand-navy/45 shadow-[0_10px_26px_-6px_rgba(17,31,57,0.2)] md:max-w-[24rem]">
-          <div className="group relative aspect-[3/4] overflow-hidden bg-brand-navy/10">
+        <div className="mx-auto mt-12 max-w-[min(42rem,92vw)] overflow-hidden rounded-sm border border-brand-navy/45 shadow-[0_10px_26px_-6px_rgba(17,31,57,0.2)]">
+          <div className="group relative aspect-[4/3] overflow-hidden bg-brand-navy/10">
             <Image
-              src="/images/amelia_journaling_rooftop.jpg"
-              alt="Amelia writing in her journal on a rooftop"
+              src="/images/amelia_machu_picchu_travel.png"
+              alt="Travel scenery at Machu Picchu — misty mountain peaks and Inca terraces in Peru"
               fill
-              className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-              sizes="(max-width: 768px) 92vw, 384px"
+              className="object-cover object-[center_30%] transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+              sizes="(max-width: 768px) 92vw, 672px"
             />
           </div>
         </div>
@@ -57,4 +57,3 @@ function TravelStat({ n, label }: { n: number; label: string }) {
     </div>
   );
 }
-

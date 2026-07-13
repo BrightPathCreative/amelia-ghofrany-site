@@ -18,29 +18,24 @@ export function Hero() {
             id="hero-eyebrow"
             className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-brand-taupe md:text-[0.85rem]"
           >
-            Investor · Entrepreneur · Strategic Consultant · Coach
+            Investor · Strategic Advisor · Speaker
           </p>
 
           <h1
             id="hero-title"
             className="font-display text-[clamp(2.5rem,5vw,4.25rem)] font-normal leading-[1.08] tracking-tight text-brand-grey"
           >
-            <span className="hero-line block">Clarity, courage</span>
-            <span className="hero-line block">&amp; the confidence</span>
-            <span className="hero-line block">
-              to lead with{" "}
-              <em className="italic text-brand-taupe">purpose.</em>
-            </span>
+            <span className="hero-line block">Investor. Strategic advisor.</span>
+            <span className="hero-line block">Speaker.</span>
           </h1>
 
           <p
             id="hero-subtitle"
             className="mt-8 max-w-xl text-[1.05rem] font-light leading-relaxed text-brand-grey/85 md:text-[1.1rem]"
           >
-            I partner with ambitious leaders and businesses to navigate
-            complexity, unlock growth, and create lasting impact, grounded in
-            20+ years of enterprise experience and a belief in the power of
-            diverse perspectives.
+            I buy and build Australian businesses, help their leaders make
+            sharper calls, and speak on what it actually takes to lead with
+            purpose.
           </p>
 
           <div
@@ -59,7 +54,7 @@ export function Hero() {
               href="#services"
               className="group inline-flex items-center gap-2 text-sm font-medium text-brand-grey/95 hover:text-brand-grey"
             >
-              Explore Services
+              Explore how I work
               <span
                 aria-hidden
                 className="inline-block transition-transform group-hover:translate-x-1"
@@ -72,19 +67,19 @@ export function Hero() {
 
         <div
           id="hero-image-wrap"
-          className="relative mx-auto w-full max-w-[min(100%,18rem)] sm:max-w-xs md:max-w-[min(100%,20rem)]"
+          className="relative mx-auto w-full max-w-[min(100%,20rem)] sm:max-w-sm md:max-w-[min(100%,26rem)] lg:max-w-[min(100%,28rem)]"
         >
           <div
-            className="pointer-events-none absolute -right-4 -top-6 h-[88%] w-[72%] rounded-sm border border-brand-taupe/35"
+            className="pointer-events-none absolute -right-5 -top-7 h-[88%] w-[72%] rounded-sm border border-brand-taupe/35"
             aria-hidden
           />
-          <div className="relative aspect-[3/4] max-h-[min(72svh,28rem)] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25 md:max-h-[min(70svh,26rem)]">
+          <div className="relative aspect-[3/4] max-h-[min(75svh,34rem)] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25 md:max-h-[min(78svh,38rem)] lg:max-h-[min(80svh,42rem)]">
             <Image
               src="/images/amelia_hero_leadership_workshop.png"
               alt="Amelia Ghofrany facilitating a leadership workshop in front of a flip chart"
               fill
               className="pointer-events-none object-cover object-[center_27%] scale-[1.02]"
-              sizes="(max-width: 768px) 288px, 320px"
+              sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1024px) 416px, 448px"
               priority
             />
           </div>

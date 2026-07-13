@@ -28,13 +28,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amelia Ghofrany | Investor, Entrepreneur, Coach",
+  title: "Amelia Ghofrany | Investor, Strategic Advisor, Speaker",
   description:
-    "Strategic consultant and coach partnering with ambitious leaders to navigate complexity, unlock growth, and create lasting impact.",
+    "I buy and build Australian businesses, help their leaders make sharper calls, and speak on what it actually takes to lead with purpose.",
   openGraph: {
     title: "Amelia Ghofrany",
     description:
-      "Clarity, courage & the confidence to lead with purpose. Strategic consulting, coaching, and investing.",
+      "Investor. Strategic advisor. Speaker. Buying and building Australian businesses, advising leaders, and speaking on purpose-led leadership.",
   },
 };
 

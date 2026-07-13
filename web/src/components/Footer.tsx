@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const logoTransparent = "/images/logos/amelia-ghofrany-logo-transparent.png";
+const logoTransparent = "/images/logos/amelia-ghofrany-logo-nav.png";
 
 export function Footer() {
   return (
@@ -9,7 +9,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1100px] px-6 md:px-8">
         <div className="flex justify-center pb-3 pt-0.5">
           <Link
-            href="#"
+            href="/"
             className="relative block h-11 w-[min(280px,72vw)] md:h-[52px] md:w-[min(320px,42vw)]"
           >
             <Image
@@ -39,7 +39,7 @@ export function Footer() {
         </p>
         <div className="flex gap-6">
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/ameliaghofrany/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-brand-taupe"
@@ -47,7 +47,7 @@ export function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/ameliaghofrany/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-brand-taupe"

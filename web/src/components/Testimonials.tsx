@@ -1,11 +1,31 @@
 const testimonials = [
   {
-    id: "placeholder",
-    initials: "AG",
+    id: "suzi-nikoloski",
+    initials: "SN",
     quote:
-      "Amelia always has such great insight, ideas and tools to help think about approaching situations and life events in different ways.",
-    name: "Client name, title",
-    isPlaceholder: true,
+      "Amelia is an exceptional leader with a proven ability to translate strategy into measurable outcomes. In my capacity at Harbour Consulting, I've engaged Amelia and her team across multiple initiatives, where they consistently delivered high-quality, insight-led outcomes. She brings a structured, commercially grounded approach to every engagement, with a clear focus on enabling growth and scale for SMEs. Amelia has a natural ability to build trust with stakeholders while maintaining a sharp consulting lens, making her a highly effective partner for organisations navigating digital transformation.",
+    name: "Suzi Nikoloski, Managing Partner, Harbour Consulting",
+  },
+  {
+    id: "navid-baghi",
+    initials: "NB",
+    quote:
+      "We had a fantastic experience working with Amelia. She is incredibly knowledgeable in her field and genuinely passionate about helping others succeed. Her advice was not only practical but also tailored to our situation, making it easy to understand and implement. Amelia had a willingness to share valuable insights and tips that we could apply immediately to improve our business. She is approachable, supportive, and truly cares about her clients' outcomes. I highly recommend Amelia to anyone looking for a skilled and reliable business advisor. Thank you again for your guidance and support.",
+    name: "Navid K. Baghi, Principal Solicitor, Amity Lawyers",
+  },
+  {
+    id: "shahrzad-davarkhah",
+    initials: "SD",
+    quote:
+      "Amelia is an exceptional business strategist who provides practical, insightful advice that delivers real value. She has a wealth of experience, takes the time to understand your business, and provides clear, actionable strategies for growth. Highly professional, approachable, and genuinely invested in her clients' success. I highly recommend CompassPoint Advisory.",
+    name: "Shahrzad Davarkhah, Owner, Luxe Murals",
+  },
+  {
+    id: "priyanka-jay",
+    initials: "PJ",
+    quote:
+      "I highly recommend CompassPoint Advisory. Amelia provided exceptional service, expert guidance and practical solutions. She took the time to understand the business needs and offered advice that adds real value. Her professionalism and attention to detail is a must for any business seeking strategic growth.",
+    name: "Priyanka Jay, Owner, My Cartino Consulting",
   },
   {
     id: "nandita-rad",
@@ -13,7 +33,6 @@ const testimonials = [
     quote:
       "Amelia brings a rare combination of strategic clarity, commercial discipline and genuine warmth. She has a strong ability to understand what is really happening inside a business and translate that into practical, considered advice that owners can actually act on. I would highly recommend Amelia and CompassPoint Advisory to any business owner seeking clear thinking, grounded strategy and thoughtful guidance.",
     name: "Nandita Rad, Director, Harven Rad Partners",
-    isPlaceholder: false,
   },
 ];
 
@@ -42,12 +61,6 @@ export function Testimonials() {
                 </p>
                 <footer className="mt-6 text-sm text-brand-taupe">
                   {testimonial.name}
-                  {testimonial.isPlaceholder ? (
-                    <>
-                      {" "}
-                      <span className="text-text-light">(placeholder)</span>
-                    </>
-                  ) : null}
                 </footer>
               </blockquote>
             </div>

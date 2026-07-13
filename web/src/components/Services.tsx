@@ -1,14 +1,7 @@
 import type { LucideIcon } from "lucide-react";
-import {
-  Compass,
-  Cpu,
-  Mic,
-  RefreshCw,
-  Sprout,
-  UserRound,
-} from "lucide-react";
+import { BriefcaseBusiness, Compass, Mic } from "lucide-react";
 
-const services: {
+const hats: {
   title: string;
   body: string;
   href: string;
@@ -16,44 +9,23 @@ const services: {
   Icon: LucideIcon;
 }[] = [
   {
-    Icon: Compass,
-    title: "Strategic Consulting",
-    body: "I advise SMEs and business leaders on strategy, business transformation, scaling for growth, and operational improvement through CompassPoint Advisory.",
-    href: "https://compasspoint.vercel.app/services",
-    external: true,
-  },
-  {
-    Icon: UserRound,
-    title: "Executive Coaching",
-    body: "I coach ambitious leaders and professionals who are successful but ready for more clarity, direction, and alignment in their career and life.",
+    Icon: BriefcaseBusiness,
+    title: "Investor",
+    body: "Actively acquiring $5–20M turnover Australian businesses, industry-agnostic, with creative deal structures and no ego about who gets the credit.",
     href: "#contact",
     external: false,
+  },
+  {
+    Icon: Compass,
+    title: "Strategic Advisor",
+    body: "Founder and Managing Director of Compasspoint Advisory, built from scratch to serve SMEs and family enterprises. 20-plus years turning strategy into decisions that actually get made.",
+    href: "https://compasspoint.vercel.app/",
+    external: true,
   },
   {
     Icon: Mic,
-    title: "Speaking & Workshops",
-    body: "Available for keynotes, panel discussions, workshops and podcasts, sharing insights on women in leadership, business growth, and driving meaningful change.",
-    href: "#contact",
-    external: false,
-  },
-  {
-    Icon: Cpu,
-    title: "AI & Digital Transformation",
-    body: "Practical, high-impact AI opportunities and a digital transformation roadmap tailored to your business, not a bloated enterprise playbook.",
-    href: "https://compasspoint.vercel.app",
-    external: true,
-  },
-  {
-    Icon: RefreshCw,
-    title: "Change Leadership",
-    body: "Human-centred change management for restructures, technology rollouts, and culture shifts, because transformation is ultimately about people.",
-    href: "https://compasspoint.vercel.app",
-    external: true,
-  },
-  {
-    Icon: Sprout,
-    title: "Investing & Mentoring",
-    body: "I invest in and mentor early-stage founders building purpose-driven businesses, bringing strategic guidance, connections, and real operational experience.",
+    title: "Speaker",
+    body: "Keynotes and panels on purpose-led leadership, women in business, and what diverse perspectives really change.",
     href: "#contact",
     external: false,
   },
@@ -70,17 +42,17 @@ export function Services() {
       <div className="relative z-[1] mx-auto max-w-[1100px] px-6 md:px-8">
         <div className="reveal mb-14 max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
-            What I Offer
+            How I Work
           </p>
           <h2 className="mt-4 font-display text-[clamp(1.85rem,3.8vw,3rem)] font-normal leading-tight text-brand-black">
-            Strategic expertise, delivered
+            Three hats. One clear through-line:
             <br />
-            with purpose and pragmatism.
+            purpose, pragmatism, and sharper calls.
           </h2>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {services.map((s) => (
+          {hats.map((s) => (
             <article
               key={s.title}
               className="service-card service-card-anim group relative overflow-hidden rounded-sm border border-brand-taupe/20 bg-white/80 p-8 shadow-sm backdrop-blur-sm"

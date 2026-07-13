@@ -2,18 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useScroll } from "@/components/scroll";
 
-const logoSrc = "/images/logos/amelia-ghofrany-logo-transparent.png";
+const logoSrc = "/images/logos/amelia-ghofrany-logo-nav.png";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#beyond", label: "Beyond" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#beyond", label: "Beyond" },
 ];
 
 export function Navigation() {
+  const pathname = usePathname();
   const { scrollToTopSmooth } = useScroll();
   const [open, setOpen] = useState(false);
 
@@ -29,11 +31,13 @@ export function Navigation() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-brand-taupe/20 bg-brand-navy shadow-sm backdrop-blur-md">
         <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-2.5 md:px-8 md:py-3">
           <Link
-            href="#"
+            href="/"
             className="relative flex h-11 w-[min(280px,72vw)] shrink-0 items-center md:h-[52px] md:w-[min(320px,42vw)]"
             onClick={(e) => {
-              e.preventDefault();
-              scrollToTopSmooth();
+              if (pathname === "/") {
+                e.preventDefault();
+                scrollToTopSmooth();
+              }
               setOpen(false);
             }}
           >
@@ -60,7 +64,7 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="/#contact"
               className="btn-sweep inline-flex rounded-full border border-brand-taupe/50 bg-brand-taupe px-5 py-2.5 text-sm font-medium text-brand-grey shadow-sm transition-colors hover:shadow-md"
             >
               <span>Work With Me</span>
@@ -111,7 +115,7 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             className="mt-4 rounded-full bg-brand-taupe px-8 py-4 text-sm font-medium uppercase tracking-widest text-brand-grey shadow-md transition hover:bg-[#6e5f4f]"
             onClick={() => setOpen(false)}
           >

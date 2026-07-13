@@ -1,3 +1,5 @@
+import { ContactEmbed } from "@/components/ContactEmbed";
+
 export function ContactCTA() {
   return (
     <section
@@ -17,8 +19,8 @@ export function ContactCTA() {
           meaningful together.
         </h2>
         <p className="reveal mx-auto mt-8 max-w-xl text-lg font-light leading-relaxed text-brand-grey/85">
-          Whether you&apos;re navigating a growth inflection point, ready for a
-          career shift, or looking to sharpen your strategy, I&apos;d love to
+          Whether you&apos;re navigating a growth inflection point, exploring an
+          acquisition, or looking to sharpen your strategy, I&apos;d love to
           hear from you.
         </p>
         <div className="reveal mt-12">
@@ -35,6 +37,8 @@ export function ContactCTA() {
           Confidential · No sales pressure · Just straight-talking strategic
           advice.
         </p>
+
+        <ContactEmbed />
       </div>
     </section>
   );
