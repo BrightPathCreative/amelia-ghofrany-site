@@ -4,7 +4,7 @@ import { ServicePageLayout } from "@/components/ServicePageLayout";
 export const metadata: Metadata = {
   title: "Investor | Amelia Ghofrany",
   description:
-    "Amelia Ghofrany invests in businesses at different stages — acquisitions, growth partnerships, and founder backing with strategic mentoring.",
+    "Amelia Ghofrany invests in businesses at different stages: acquisitions, growth partnerships and founder backing with strategic mentoring.",
 };
 
 export default function InvestorPage() {

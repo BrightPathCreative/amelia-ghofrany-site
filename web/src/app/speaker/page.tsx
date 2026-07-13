@@ -23,7 +23,7 @@ export default function SpeakerPage() {
       <p>
         I&apos;m available for keynotes, panel discussions, workshops and
         podcasts, sharing insights on women in leadership, business growth, and
-        driving meaningful change. I speak from experience, not theory —
+        driving meaningful change. I speak from experience, not theory:
         twenty years advising executive teams, building a business from scratch,
         and backing founders has taught me a lot about what moves people and
         organisations forward.

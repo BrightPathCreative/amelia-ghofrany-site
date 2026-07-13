@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Contact | Amelia Ghofrany",
   description:
-    "Get in touch with Amelia Ghofrany — investor, strategic advisor, and speaker. Book a discovery call or send an enquiry.",
+    "Get in touch with Amelia Ghofrany, investor, strategic advisor and speaker. Book a discovery call or send an enquiry.",
 };
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
             Let&apos;s start a conversation.
           </h1>
           <p className="mx-auto mt-8 max-w-lg text-lg font-light leading-relaxed text-brand-grey/85">
-            Prefer to book time directly, or leave a note first? Either works —
+            Prefer to book time directly, or leave a note first? Either works.
             I&apos;ll come back with something useful, not a template.
           </p>
 

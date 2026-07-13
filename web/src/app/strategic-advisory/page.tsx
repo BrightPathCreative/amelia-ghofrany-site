@@ -6,7 +6,7 @@ const COMPASS_POINT_URL = "https://www.compasspointadvisory.com/";
 export const metadata: Metadata = {
   title: "Strategic Advisory | Amelia Ghofrany",
   description:
-    "Values-led strategic advisory for SMEs, founders and family enterprises through CompassPoint Advisory — plain advice that gets acted on.",
+    "Values-led strategic advisory for SMEs, founders and family enterprises through CompassPoint Advisory: plain advice that gets acted on.",
 };
 
 export default function StrategicAdvisoryPage() {
@@ -32,7 +32,7 @@ export default function StrategicAdvisoryPage() {
         Advisory, the practice I founded to help SMEs, founders and family
         enterprises grow and transform. I&apos;ve advised executive teams and
         led major transformation programs across organisations like the ATO,
-        Qantas, Commonwealth Bank and NAB — but I set up CompassPoint Advisory
+        Qantas, Commonwealth Bank and NAB, but I set up CompassPoint Advisory
         because I believe strategy changes lives most at the SME level, not just
         in big corporates.
       </p>

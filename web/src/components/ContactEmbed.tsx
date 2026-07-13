@@ -21,7 +21,7 @@ export function ContactEmbed() {
         Share a little context and I&apos;ll follow up.
       </p>
 
-      {/* Mock form — replace with GHL iframe when ready */}
+      {/* Mock form; replace with GHL iframe when ready */}
       <div className="mt-8">
         <ContactForm />
       </div>

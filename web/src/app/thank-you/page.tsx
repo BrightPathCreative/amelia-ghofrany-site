@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Thank You | Amelia Ghofrany",
   description:
-    "Thanks for getting in touch — Amelia will be in touch shortly.",
+    "Thanks for getting in touch. Amelia will be in touch shortly.",
 };
 
 export default function ThankYouPage() {
@@ -20,11 +20,11 @@ export default function ThankYouPage() {
             Message received
           </p>
           <h1 className="mt-6 font-display text-[clamp(2rem,4.5vw,3.25rem)] font-normal leading-tight text-brand-grey">
-            Thank you — I&apos;ve got it.
+            Thank you. I&apos;ve got it.
           </h1>
           <p className="mx-auto mt-8 max-w-lg text-lg font-light leading-relaxed text-brand-grey/85">
             I read every note myself. Give me a little time to come back with
-            something useful — not a templated reply. If a conversation feels
+            something useful, not a templated reply. If a conversation feels
             like the right next step, we can book that from here too.
           </p>
 

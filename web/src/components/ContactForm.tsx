@@ -16,7 +16,7 @@ const fieldClass =
 
 /**
  * Mock enquiry form. Tomorrow, replace this component’s usage in ContactEmbed
- * with a GoHighLevel iframe — keep ContactEmbed as the swap point.
+ * with a GoHighLevel iframe; keep ContactEmbed as the swap point.
  */
 export function ContactForm() {
   const router = useRouter();
@@ -25,7 +25,7 @@ export function ContactForm() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSubmitting(true);
-    // Mock only — no backend / GHL yet. Navigate to thank-you on success.
+    // Mock only; no backend / GHL yet. Navigate to thank-you on success.
     router.push("/thank-you");
   }
 
