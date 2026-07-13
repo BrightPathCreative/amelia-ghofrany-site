@@ -1,4 +1,4 @@
-import { ContactEmbed } from "@/components/ContactEmbed";
+import Link from "next/link";
 
 export function ContactCTA() {
   return (
@@ -23,22 +23,26 @@ export function ContactCTA() {
           acquisition, or looking to sharpen your strategy, I&apos;d love to
           hear from you.
         </p>
-        <div className="reveal mt-12">
+        <div className="reveal mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
           <a
             href="https://calendly.com/ameliaghofrany"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex rounded-full bg-brand-taupe px-10 py-4 text-sm font-medium text-brand-grey shadow-lg transition hover:-translate-y-0.5 hover:bg-[#6e5f4f] hover:shadow-xl"
+            className="btn-sweep inline-flex rounded-full bg-brand-taupe px-10 py-4 text-sm font-medium text-brand-grey shadow-lg transition hover:-translate-y-0.5 hover:bg-[#6e5f4f] hover:shadow-xl"
           >
-            Book Your Free Discovery Call
+            <span>Book Your Free Discovery Call</span>
           </a>
+          <Link
+            href="/contact"
+            className="inline-flex rounded-full border border-brand-taupe/45 px-10 py-4 text-sm font-medium text-brand-grey/90 transition hover:border-brand-taupe hover:text-brand-grey"
+          >
+            Send an enquiry
+          </Link>
         </div>
         <p className="reveal mt-8 text-sm font-light text-brand-grey/70">
           Confidential · No sales pressure · Just straight-talking strategic
           advice.
         </p>
-
-        <ContactEmbed />
       </div>
     </section>
   );

@@ -72,7 +72,7 @@ export function About() {
             startups to large enterprises, to help them transform and scale with
             purpose. Through my company,{" "}
             <a
-              href="https://compasspoint.vercel.app/"
+              href="https://www.compasspointadvisory.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-brand-navy underline decoration-brand-taupe/50 underline-offset-4 transition-colors hover:decoration-brand-taupe"

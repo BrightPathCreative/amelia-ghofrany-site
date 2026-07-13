@@ -5,29 +5,25 @@ const hats: {
   title: string;
   body: string;
   href: string;
-  external: boolean;
   Icon: LucideIcon;
 }[] = [
   {
     Icon: BriefcaseBusiness,
     title: "Investor",
     body: "Actively acquiring $5–20M turnover Australian businesses, industry-agnostic, with creative deal structures and no ego about who gets the credit.",
-    href: "#contact",
-    external: false,
+    href: "/investor",
   },
   {
     Icon: Compass,
     title: "Strategic Advisor",
     body: "Founder and Managing Director of Compasspoint Advisory, built from scratch to serve SMEs and family enterprises. 20-plus years turning strategy into decisions that actually get made.",
-    href: "https://compasspoint.vercel.app/",
-    external: true,
+    href: "/strategic-advisory",
   },
   {
     Icon: Mic,
     title: "Speaker",
     body: "Keynotes and panels on purpose-led leadership, women in business, and what diverse perspectives really change.",
-    href: "#contact",
-    external: false,
+    href: "/speaker",
   },
 ];
 
@@ -71,9 +67,6 @@ export function Services() {
               </p>
               <a
                 href={s.href}
-                {...(s.external
-                  ? { target: "_blank", rel: "noopener noreferrer" }
-                  : {})}
                 className="relative mt-6 inline-flex items-center gap-1 text-sm font-medium text-brand-navy transition-colors hover:text-brand-black"
               >
                 Learn more <span aria-hidden>→</span>

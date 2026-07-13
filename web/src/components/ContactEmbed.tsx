@@ -12,13 +12,13 @@ export function ContactEmbed() {
   return (
     <div
       id="contact-form"
-      className="reveal mx-auto mt-14 max-w-xl rounded-sm border border-brand-taupe/25 bg-brand-navy/50 p-6 text-left shadow-[0_16px_48px_-20px_rgba(0,0,0,0.45)] backdrop-blur-sm md:mt-16 md:p-8"
+      className="reveal mx-auto max-w-xl rounded-sm border border-brand-taupe/25 bg-brand-navy/50 p-6 text-left shadow-[0_16px_48px_-20px_rgba(0,0,0,0.45)] backdrop-blur-sm md:p-8"
     >
       <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
-        Or send a note
+        Send a note
       </p>
       <p className="mt-2 font-display text-xl text-brand-grey md:text-2xl">
-        Prefer to write first? Share a little context and I&apos;ll follow up.
+        Share a little context and I&apos;ll follow up.
       </p>
 
       {/* Mock form — replace with GHL iframe when ready */}

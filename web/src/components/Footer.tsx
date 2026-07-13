@@ -29,7 +29,7 @@ export function Footer() {
         <p>
           Melbourne, Australia ·{" "}
           <a
-            href="https://compasspoint.vercel.app/"
+            href="https://www.compasspointadvisory.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-brand-taupe underline-offset-4 transition-colors hover:text-brand-grey"

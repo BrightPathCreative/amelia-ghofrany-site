@@ -64,7 +64,7 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="/#contact"
+              href="/contact"
               className="btn-sweep inline-flex rounded-full border border-brand-taupe/50 bg-brand-taupe px-5 py-2.5 text-sm font-medium text-brand-grey shadow-sm transition-colors hover:shadow-md"
             >
               <span>Work With Me</span>
@@ -115,7 +115,7 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="/#contact"
+            href="/contact"
             className="mt-4 rounded-full bg-brand-taupe px-8 py-4 text-sm font-medium uppercase tracking-widest text-brand-grey shadow-md transition hover:bg-[#6e5f4f]"
             onClick={() => setOpen(false)}
           >
