@@ -1,43 +1,34 @@
 import Image from "next/image";
 
+/** Full Beyond the Boardroom body; used on `/beyond`. */
 export function BeyondBoardroom() {
   return (
-    <section id="beyond" className="surface-linen relative py-20 md:py-[8rem]">
-      <div className="mx-auto max-w-[1100px] px-6 md:px-8">
-        <div className="reveal mx-auto max-w-3xl text-center">
-          <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
-            Beyond the Boardroom
-          </p>
-          <h2 className="mt-4 font-display text-[clamp(1.85rem,3.5vw,2.75rem)] font-normal text-brand-black">
-            A curious traveller &amp; global citizen.
-          </h2>
-          <p className="mt-6 font-light text-text-secondary">
-            The same curiosity I bring to consulting and mentoring shows up
-            when I travel. New places sharpen how I see the world, how I lead,
-            and how I connect.
-          </p>
-        </div>
+    <div>
+      <p className="mx-auto max-w-3xl text-center text-[1.05rem] font-light leading-relaxed text-text-secondary md:text-[1.08rem]">
+        The same curiosity I bring to consulting and mentoring shows up
+        when I travel. New places sharpen how I see the world, how I lead,
+        and how I connect.
+      </p>
 
-        <div className="reveal-scale mx-auto mt-12 flex flex-wrap justify-center gap-10 md:gap-16">
-          <TravelStat n={26} label="Countries" />
-          <TravelStat n={6} label="Continents" />
-          <TravelStat n={3} label="Continents Called Home" />
-          <TravelStat n={1} label="Bucket List (Antarctica)" />
-        </div>
+      <div className="mx-auto mt-12 flex flex-wrap justify-center gap-10 md:gap-16">
+        <TravelStat n={26} label="Countries" />
+        <TravelStat n={6} label="Continents" />
+        <TravelStat n={3} label="Continents Called Home" />
+        <TravelStat n={1} label="Bucket List (Antarctica)" />
+      </div>
 
-        <div className="mx-auto mt-12 max-w-[min(42rem,92vw)] overflow-hidden rounded-sm border border-brand-navy/45 shadow-[0_10px_26px_-6px_rgba(17,31,57,0.2)]">
-          <div className="group relative aspect-[4/3] overflow-hidden bg-brand-navy/10">
-            <Image
-              src="/images/amelia_machu_picchu_travel.png"
-              alt="Travel scenery at Machu Picchu — misty mountain peaks and Inca terraces in Peru"
-              fill
-              className="object-cover object-[center_30%] transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-              sizes="(max-width: 768px) 92vw, 672px"
-            />
-          </div>
+      <div className="mx-auto mt-12 max-w-[min(42rem,92vw)] overflow-hidden rounded-sm border border-brand-navy/45 shadow-[0_10px_26px_-6px_rgba(17,31,57,0.2)]">
+        <div className="group relative aspect-[4/3] overflow-hidden bg-brand-navy/10">
+          <Image
+            src="/images/amelia_machu_picchu_travel.png"
+              alt="Travel scenery at Machu Picchu: misty mountain peaks and Inca terraces in Peru"
+            fill
+            className="object-cover object-[center_30%] transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+            sizes="(max-width: 768px) 92vw, 672px"
+          />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

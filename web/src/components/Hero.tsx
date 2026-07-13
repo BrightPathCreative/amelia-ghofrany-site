@@ -51,7 +51,7 @@ export function Hero() {
               <span>Book a Discovery Call</span>
             </a>
             <a
-              href="#services"
+              href="/#services"
               className="group inline-flex items-center gap-2 text-sm font-medium text-brand-grey/95 hover:text-brand-grey"
             >
               Explore how I work
