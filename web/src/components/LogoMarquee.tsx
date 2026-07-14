@@ -1,24 +1,24 @@
 import Image from "next/image";
 
 const logos: { src: string; alt: string }[] = [
-  { src: "/images/logos/ato.png", alt: "Australian Taxation Office" },
-  { src: "/images/logos/australia-post.jpeg", alt: "Australia Post" },
-  { src: "/images/logos/defence-force.png", alt: "Australian Defence Force" },
+  { src: "/images/logos/ato-2.png", alt: "Australian Taxation Office" },
+  { src: "/images/logos/australia-post-2.png", alt: "Australia Post" },
+  { src: "/images/logos/defence-force-2.png", alt: "Australian Defence Force" },
   { src: "/images/logos/bupa.png", alt: "Bupa" },
-  { src: "/images/logos/commonwealth-bank.png", alt: "Commonwealth Bank" },
-  { src: "/images/logos/department-veterans-affairs.png", alt: "Department of Veterans' Affairs" },
-  { src: "/images/logos/fujitsu.png", alt: "Fujitsu" },
-  { src: "/images/logos/ge.jpeg", alt: "GE" },
-  { src: "/images/logos/ibm.jpg", alt: "IBM" },
-  { src: "/images/logos/jurlique.jpg", alt: "Jurlique" },
-  { src: "/images/logos/kiwi-bank.png", alt: "Kiwibank" },
-  { src: "/images/logos/myer.png", alt: "Myer" },
-  { src: "/images/logos/nab.png", alt: "NAB" },
+  { src: "/images/logos/commonwealth-bank-2.png", alt: "Commonwealth Bank" },
+  { src: "/images/logos/department-veterans-affairs-2.png", alt: "Department of Veterans' Affairs" },
+  { src: "/images/logos/fujitsu-2.png", alt: "Fujitsu" },
+  { src: "/images/logos/ge-2.png", alt: "GE" },
+  { src: "/images/logos/ibm-2.png", alt: "IBM" },
+  { src: "/images/logos/jurlique-2.png", alt: "Jurlique" },
+  { src: "/images/logos/kiwi-bank-2.png", alt: "Kiwibank" },
+  { src: "/images/logos/myer-2.png", alt: "Myer" },
+  { src: "/images/logos/nab-2.png", alt: "NAB" },
   { src: "/images/logos/ncver.png", alt: "NCVER" },
-  { src: "/images/logos/qantas.png", alt: "Qantas" },
-  { src: "/images/logos/tas-networks.png", alt: "TasNetworks" },
-  { src: "/images/logos/telstra.png", alt: "Telstra" },
-  { src: "/images/logos/txc-tech.jpg", alt: "TXC Technology" },
+  { src: "/images/logos/qantas-2.png", alt: "Qantas" },
+  { src: "/images/logos/tas-networks-2.png", alt: "TasNetworks" },
+  { src: "/images/logos/telstra-2.png", alt: "Telstra" },
+  { src: "/images/logos/dxc-2.png", alt: "DXC Technology" },
 ];
 
 export function LogoMarquee() {
@@ -41,13 +41,13 @@ export function LogoMarquee() {
         {logos.map((logo) => (
           <div
             key={logo.src}
-            className="group relative h-[44px] w-full max-w-[168px] opacity-85 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 md:h-[48px]"
+            className="group relative h-[44px] w-full max-w-[168px] md:h-[48px]"
           >
             <Image
               src={logo.src}
               alt={logo.alt}
               fill
-              className="object-contain object-center"
+              className="object-contain object-center opacity-80 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0"
               sizes="(max-width: 640px) 45vw, 168px"
             />
           </div>

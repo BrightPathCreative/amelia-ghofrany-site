@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { LogoMarquee } from "@/components/LogoMarquee";
 import { Services } from "@/components/Services";
+import { Testimonials } from "@/components/Testimonials";
 import { TestimonialSpotlight } from "@/components/TestimonialSpotlight";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutTeaser />
       <BeyondTeaser />
       <LogoMarquee />
+      <Testimonials />
       <ContactCTA />
       <Footer />
     </main>

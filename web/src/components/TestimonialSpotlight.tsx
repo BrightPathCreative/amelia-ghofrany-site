@@ -12,11 +12,11 @@ export function TestimonialSpotlight() {
         <blockquote className="mt-8">
           <span
             aria-hidden
-            className="block font-display text-5xl leading-none text-brand-taupe/70 md:text-6xl"
+            className="block font-display text-4xl leading-none text-brand-taupe/70 md:text-5xl"
           >
             &ldquo;
           </span>
-          <p className="mt-4 font-display text-[clamp(1.35rem,2.8vw,2rem)] font-normal leading-relaxed text-white">
+          <p className="mt-3 font-display text-[clamp(1.1rem,1.9vw,1.4rem)] font-normal leading-relaxed text-white">
             Amelia brings a rare combination of strategic clarity, commercial
             discipline and genuine warmth. She has a strong ability to
             understand what is really happening inside a business and translate
