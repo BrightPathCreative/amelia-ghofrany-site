@@ -15,7 +15,7 @@ export default function ContactPage() {
         <div className="pointer-events-none absolute -right-40 top-1/3 h-[480px] w-[480px] rounded-full bg-[radial-gradient(circle,rgba(161,177,194,0.14),transparent_65%)]" />
         <div className="pointer-events-none absolute -left-28 bottom-0 h-[320px] w-[320px] rounded-full bg-[radial-gradient(circle,rgba(135,115,94,0.12),transparent_70%)]" />
 
-        <div className="relative z-[1] mx-auto w-full max-w-[640px] text-center">
+        <div className="relative z-[1] mx-auto w-full max-w-[800px] text-center">
           <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
             Work With Me
           </p>
