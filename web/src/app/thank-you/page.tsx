@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Thank You | Amelia Ghofrany",
   description:
     "Thanks for getting in touch. Amelia will be in touch shortly.",
+  robots: { index: false, follow: false },
 };
 
 export default function ThankYouPage() {

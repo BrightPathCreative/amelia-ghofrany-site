@@ -1,12 +1,8 @@
-import { ContactForm } from "@/components/ContactForm";
+import Script from "next/script";
 
 /**
- * Contact form host region.
- *
- * Swap path for GoHighLevel (tomorrow):
- * 1. Remove or comment out <ContactForm />.
- * 2. Uncomment the iframe below and set `src` to the GHL form embed URL.
- * 3. Tweak min-height if the iframe needs more vertical space.
+ * Contact form host region — embeds the GoHighLevel enquiry form.
+ * On submission, GHL redirects to /thank-you (configured in GHL form settings).
  */
 export function ContactEmbed() {
   return (
@@ -21,19 +17,35 @@ export function ContactEmbed() {
         Share a little context and I&apos;ll follow up.
       </p>
 
-      {/* Mock form; replace with GHL iframe when ready */}
       <div className="mt-8">
-        <ContactForm />
+        <iframe
+          src="https://links.brightpathcreative.com.au/widget/form/fJmTFgZvTmnsBUiJyt2y"
+          style={{
+            width: "100%",
+            height: "100%",
+            border: "none",
+            borderRadius: "8px",
+          }}
+          className="min-h-[588px] w-full"
+          id="inline-fJmTFgZvTmnsBUiJyt2y"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Amelia Ghofrany Enquiry Form"
+          data-height="588"
+          data-layout-iframe-id="inline-fJmTFgZvTmnsBUiJyt2y"
+          data-form-id="fJmTFgZvTmnsBUiJyt2y"
+          title="Amelia Ghofrany Enquiry Form"
+        />
+        <Script
+          src="https://links.brightpathcreative.com.au/js/form_embed.js"
+          strategy="lazyOnload"
+        />
       </div>
-
-      {/*
-      <iframe
-        title="Contact form"
-        src="YOUR_GHL_FORM_EMBED_URL"
-        className="mt-8 min-h-[640px] w-full border-0"
-        loading="lazy"
-      />
-      */}
     </div>
   );
 }
