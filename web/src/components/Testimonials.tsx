@@ -31,13 +31,16 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-brand-blue py-20 md:py-[7rem]">
-      <div className="mx-auto max-w-[1100px] px-6 md:px-8">
+    <section className="relative overflow-hidden bg-brand-navy py-20 md:py-[7rem]">
+      <div className="pointer-events-none absolute -right-36 top-0 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,rgba(161,177,194,0.14),transparent_65%)]" />
+      <div className="pointer-events-none absolute -left-28 bottom-0 h-[340px] w-[340px] rounded-full bg-[radial-gradient(circle,rgba(135,115,94,0.12),transparent_70%)]" />
+
+      <div className="relative z-[1] mx-auto max-w-[1100px] px-6 md:px-8">
         <div className="reveal text-center">
           <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
             Kind Words
           </p>
-          <h2 className="mt-4 font-display text-[clamp(1.75rem,3.5vw,2.5rem)] font-normal text-brand-black">
+          <h2 className="mt-4 font-display text-[clamp(1.75rem,3.5vw,2.5rem)] font-normal text-brand-grey">
             What clients say
           </h2>
         </div>
@@ -46,19 +49,19 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <figure
               key={t.id}
-              className="service-card reveal flex flex-col rounded-sm border border-brand-taupe/25 bg-white/60 p-7 backdrop-blur-sm md:p-8"
+              className="service-card reveal flex flex-col rounded-sm border border-brand-taupe/30 bg-white/10 p-7 backdrop-blur-sm md:p-8"
             >
               <span
                 aria-hidden
-                className="font-display text-3xl leading-none text-brand-taupe/60"
+                className="font-display text-3xl leading-none text-brand-taupe/70"
               >
                 &ldquo;
               </span>
-              <blockquote className="mt-2 flex-1 text-sm font-light leading-relaxed text-text-secondary">
+              <blockquote className="mt-2 flex-1 text-sm font-light leading-relaxed text-brand-grey/90">
                 {t.quote}
               </blockquote>
-              <figcaption className="mt-6 border-t border-brand-taupe/20 pt-5">
-                <span className="block text-sm font-medium text-brand-black">
+              <figcaption className="mt-6 border-t border-brand-taupe/25 pt-5">
+                <span className="block text-sm font-medium text-brand-grey">
                   {t.name}
                 </span>
                 <span className="block text-xs text-brand-taupe">
