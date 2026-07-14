@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-brand-navy pt-28 pb-16 md:pt-32">
+    <section className="relative overflow-hidden bg-brand-navy pt-28 pb-12 md:pt-32 md:pb-14">
       <div
         className="pointer-events-none absolute -right-32 top-20 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,rgba(161,177,194,0.2),transparent_68%)]"
         aria-hidden
@@ -73,7 +73,7 @@ export function Hero() {
             className="pointer-events-none absolute -right-5 -top-7 h-[88%] w-[72%] rounded-sm border border-brand-taupe/35"
             aria-hidden
           />
-          <div className="relative aspect-[3/4] max-h-[min(75svh,34rem)] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25 md:max-h-[min(78svh,38rem)] lg:max-h-[min(80svh,42rem)]">
+          <div className="relative aspect-[3/4] max-h-[min(58svh,30rem)] overflow-hidden rounded-sm border border-brand-taupe/35 bg-brand-navy shadow-xl shadow-black/25 md:max-h-[min(62svh,32rem)] lg:max-h-[min(66svh,34rem)]">
             <Image
               src="/images/amelia_hero_leadership_workshop.png"
               alt="Amelia Ghofrany facilitating a leadership workshop in front of a flip chart"

@@ -83,24 +83,6 @@ export function SiteInit() {
         });
       });
 
-      gsap.utils.toArray<HTMLElement>(".stat-num").forEach((el) => {
-        const raw = el.dataset.target;
-        if (raw === undefined) return;
-        const target = Number(raw);
-        const suffix = el.dataset.suffix ?? "";
-        const obj = { val: 0 };
-        gsap.to(obj, {
-          val: target,
-          duration: 2,
-          ease: "power2.out",
-          scrollTrigger: { trigger: el, start: "top 90%", once: true },
-          onUpdate: () => {
-            const v = Math.round(obj.val);
-            el.textContent = `${v}${suffix}`;
-          },
-        });
-      });
-
       ScrollTrigger.refresh();
     },
     { dependencies: [] },

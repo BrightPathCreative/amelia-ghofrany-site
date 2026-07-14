@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AnimatedStatNumber } from "@/components/AnimatedStatNumber";
 
 /** Full Beyond the Boardroom body; used on `/beyond`. */
 export function BeyondBoardroom() {
@@ -35,13 +36,10 @@ export function BeyondBoardroom() {
 function TravelStat({ n, label }: { n: number; label: string }) {
   return (
     <div className="text-center">
-      <p
-        className="stat-num font-display text-4xl text-brand-navy md:text-5xl"
-        data-target={String(n)}
-        data-suffix=""
-      >
-        0
-      </p>
+      <AnimatedStatNumber
+        value={n}
+        className="font-display text-4xl text-brand-navy md:text-5xl"
+      />
       <p className="mt-1 max-w-[10rem] text-xs uppercase tracking-widest text-brand-taupe">
         {label}
       </p>

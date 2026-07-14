@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AnimatedStatNumber } from "@/components/AnimatedStatNumber";
 
 /** Full About body; used on `/about` (page chrome supplies the title). */
 export function About() {
@@ -96,13 +97,11 @@ function StatBlock({
 }) {
   return (
     <div>
-      <p
-        className="stat-num font-display text-4xl text-brand-navy md:text-[2.75rem]"
-        data-target={String(value)}
-        data-suffix={suffix}
-      >
-        0{suffix}
-      </p>
+      <AnimatedStatNumber
+        value={value}
+        suffix={suffix}
+        className="font-display text-4xl text-brand-navy md:text-[2.75rem]"
+      />
       <p className="mt-1 text-sm text-brand-taupe">{label}</p>
     </div>
   );
