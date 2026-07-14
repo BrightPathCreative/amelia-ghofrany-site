@@ -124,6 +124,75 @@ body {
   width: 100%;
 }
 
+/* Service icon badge: soft pulse + periodic shine sweep */
+.icon-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--brand-taupe) 32%, transparent);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--brand-blue) 30%, transparent),
+    color-mix(in srgb, var(--brand-taupe) 16%, transparent)
+  );
+  overflow: hidden;
+  animation: icon-pulse 3.4s ease-in-out infinite;
+}
+
+.icon-badge::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -80%;
+  width: 55%;
+  height: 220%;
+  transform: rotate(25deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.7),
+    transparent
+  );
+  animation: icon-shine 4.6s ease-in-out infinite;
+}
+
+@keyframes icon-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--brand-taupe) 30%, transparent);
+  }
+  50% {
+    transform: scale(1.045);
+    box-shadow: 0 0 0 9px transparent;
+  }
+}
+
+@keyframes icon-shine {
+  0%,
+  55% {
+    left: -80%;
+  }
+  85%,
+  100% {
+    left: 140%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon-badge {
+    animation: none;
+  }
+  .icon-badge::after {
+    animation: none;
+    display: none;
+  }
+}
+
 /* Service card */
 .service-card {
   transition:
