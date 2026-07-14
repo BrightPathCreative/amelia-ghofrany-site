@@ -1,7 +1,6 @@
 const testimonials = [
   {
     id: "suzi-nikoloski",
-    initials: "SN",
     quote:
       "Amelia is an exceptional leader with a proven ability to translate strategy into measurable outcomes. In my capacity at Harbour Consulting, I've engaged Amelia and her team across multiple initiatives, where they consistently delivered high-quality, insight-led outcomes. She brings a structured, commercially grounded approach to every engagement, with a clear focus on enabling growth and scale for SMEs. Amelia has a natural ability to build trust with stakeholders while maintaining a sharp consulting lens, making her a highly effective partner for organisations navigating digital transformation.",
     name: "Suzi Nikoloski",
@@ -9,7 +8,6 @@ const testimonials = [
   },
   {
     id: "navid-baghi",
-    initials: "NB",
     quote:
       "We had a fantastic experience working with Amelia. She is incredibly knowledgeable in her field and genuinely passionate about helping others succeed. Her advice was not only practical but also tailored to our situation, making it easy to understand and implement. Amelia had a willingness to share valuable insights and tips that we could apply immediately to improve our business. She is approachable, supportive, and truly cares about her clients' outcomes. I highly recommend Amelia to anyone looking for a skilled and reliable business advisor.",
     name: "Navid K. Baghi",
@@ -17,7 +15,6 @@ const testimonials = [
   },
   {
     id: "shahrzad-davarkhah",
-    initials: "SD",
     quote:
       "Amelia is an exceptional business strategist who provides practical, insightful advice that delivers real value. She has a wealth of experience, takes the time to understand your business, and provides clear, actionable strategies for growth. Highly professional, approachable, and genuinely invested in her clients' success. I highly recommend CompassPoint Advisory.",
     name: "Shahrzad Davarkhah",
@@ -25,7 +22,6 @@ const testimonials = [
   },
   {
     id: "priyanka-jay",
-    initials: "PJ",
     quote:
       "I highly recommend CompassPoint Advisory. Amelia provided exceptional service, expert guidance and practical solutions. She took the time to understand the business needs and offered advice that adds real value. Her professionalism and attention to detail is a must for any business seeking strategic growth.",
     name: "Priyanka Jay",
@@ -35,7 +31,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="surface-linen relative border-t border-brand-taupe/15 py-20 md:py-[7rem]">
+    <section className="relative overflow-hidden bg-brand-blue py-20 md:py-[7rem]">
       <div className="mx-auto max-w-[1100px] px-6 md:px-8">
         <div className="reveal text-center">
           <p className="text-xs font-medium uppercase tracking-widest text-brand-taupe">
@@ -61,20 +57,12 @@ export function Testimonials() {
               <blockquote className="mt-2 flex-1 text-sm font-light leading-relaxed text-text-secondary">
                 {t.quote}
               </blockquote>
-              <figcaption className="mt-6 flex items-center gap-4 border-t border-brand-taupe/20 pt-5">
-                <span
-                  aria-hidden
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brand-taupe/35 bg-brand-navy/5 font-display text-xs font-semibold tracking-wide text-brand-navy"
-                >
-                  {t.initials}
+              <figcaption className="mt-6 border-t border-brand-taupe/20 pt-5">
+                <span className="block text-sm font-medium text-brand-black">
+                  {t.name}
                 </span>
-                <span>
-                  <span className="block text-sm font-medium text-brand-black">
-                    {t.name}
-                  </span>
-                  <span className="block text-xs text-brand-taupe">
-                    {t.role}
-                  </span>
+                <span className="block text-xs text-brand-taupe">
+                  {t.role}
                 </span>
               </figcaption>
             </figure>

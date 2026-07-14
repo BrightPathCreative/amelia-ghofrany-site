@@ -55,7 +55,7 @@ export function Services() {
           {hats.map((s) => (
             <article
               key={s.title}
-              className="service-card service-card-anim group relative overflow-hidden rounded-sm border border-brand-taupe/20 bg-white/80 p-8 shadow-sm backdrop-blur-sm"
+              className="service-card service-card-anim group relative overflow-hidden rounded-sm border border-brand-blue bg-white/80 p-8 shadow-sm backdrop-blur-sm"
             >
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-blue/[0.08] via-transparent to-brand-navy/[0.06] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               <span className="icon-badge relative" aria-hidden>
