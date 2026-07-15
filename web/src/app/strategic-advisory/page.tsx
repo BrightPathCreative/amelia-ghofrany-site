@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 
 const COMPASS_POINT_URL = "https://www.compasspointadvisory.com/";
@@ -36,6 +37,19 @@ export default function StrategicAdvisoryPage() {
         because I believe strategy changes lives most at the SME level, not just
         in big corporates.
       </p>
+
+      <figure className="my-2 mx-auto w-full max-w-md overflow-hidden rounded-sm border border-brand-taupe/30 shadow-md">
+        <div className="relative aspect-[4/5] w-full">
+          <Image
+            src="/images/amelia_strategic_advisory.jpg"
+            alt="Amelia Ghofrany at her desk during a strategic advisory conversation"
+            fill
+            className="object-cover object-[center_18%]"
+            sizes="(max-width: 768px) 100vw, 448px"
+          />
+        </div>
+      </figure>
+
       <p>
         My approach is values-led and practical: plain advice that gets acted
         on, not a deck full of options you&apos;ll shelve. Whether you&apos;re
