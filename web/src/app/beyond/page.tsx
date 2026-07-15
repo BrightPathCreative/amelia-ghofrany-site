@@ -13,7 +13,7 @@ export default function BeyondPage() {
     <ContentPageLayout
       wide
       eyebrow="Beyond the Boardroom"
-      title="A curious traveller & global citizen."
+      title="A curious traveller & global citizen"
     >
       <BeyondBoardroom />
     </ContentPageLayout>

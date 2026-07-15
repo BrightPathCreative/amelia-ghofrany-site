@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { useScroll } from "@/components/scroll";
 
-const logoSrc = "/images/logos/amelia-ghofrany-logo-nav.png";
+const logoSrc = "/images/logos/amelia-ghofrany-logo.png";
 
 const serviceLinks = [
   { href: "/investor", label: "Investor" },

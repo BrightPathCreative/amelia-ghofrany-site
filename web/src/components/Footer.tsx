@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const logoTransparent = "/images/logos/amelia-ghofrany-logo-nav.png";
+const logoSrc = "/images/logos/amelia-ghofrany-logo.png";
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
             className="relative block h-11 w-[min(280px,72vw)] md:h-[52px] md:w-[min(320px,42vw)]"
           >
             <Image
-              src={logoTransparent}
+              src={logoSrc}
               alt="Amelia Ghofrany"
               fill
               className="object-contain"

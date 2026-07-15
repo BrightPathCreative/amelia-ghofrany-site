@@ -11,7 +11,7 @@ export default function SpeakerPage() {
   return (
     <ServicePageLayout
       eyebrow="Speaker"
-      title="Keynotes, panels, and conversations that move people."
+      title="Keynotes, panels, and conversations that move people"
       ctas={[
         {
           href: "/contact",

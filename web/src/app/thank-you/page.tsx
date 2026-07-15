@@ -21,7 +21,7 @@ export default function ThankYouPage() {
             Message received
           </p>
           <h1 className="mt-6 font-display text-[clamp(2rem,4.5vw,3.25rem)] font-normal leading-tight text-brand-grey">
-            Thank you. I&apos;ve got it.
+            Thank you — I&apos;ve got it
           </h1>
           <p className="mx-auto mt-8 max-w-lg text-lg font-light leading-relaxed text-brand-grey/85">
             I read every note myself. Give me a little time to come back with

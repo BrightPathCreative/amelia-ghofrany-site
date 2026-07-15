@@ -20,7 +20,7 @@ export default function ContactPage() {
             Work With Me
           </p>
           <h1 className="mt-6 font-display text-[clamp(2rem,4.5vw,3.25rem)] font-normal leading-tight text-brand-grey">
-            Let&apos;s start a conversation.
+            Let&apos;s start a conversation
           </h1>
           <p className="mx-auto mt-8 max-w-lg text-lg font-light leading-relaxed text-brand-grey/85">
             Prefer to book time directly, or leave a note first? Either works.

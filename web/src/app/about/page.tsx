@@ -15,11 +15,11 @@ export default function AboutPage() {
       eyebrow="About Amelia"
       title={
         <>
-          Enterprise rigour.
+          Enterprise rigour
           <br />
-          Founder energy.
+          Founder energy
           <br />
-          <em className="italic text-brand-taupe">Human-first</em> leadership.
+          <em className="italic text-brand-taupe">Human-first</em> leadership
         </>
       }
     >

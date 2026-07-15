@@ -25,8 +25,8 @@ export function Hero() {
             id="hero-title"
             className="font-display text-[clamp(2.5rem,5vw,4.25rem)] font-normal leading-[1.08] tracking-tight text-brand-grey"
           >
-            <span className="hero-line block">Investor. Strategic advisor.</span>
-            <span className="hero-line block">Speaker.</span>
+            <span className="hero-line block">Investor Strategic Advisor</span>
+            <span className="hero-line block">Speaker</span>
           </h1>
 
           <p

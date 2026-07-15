@@ -11,7 +11,7 @@ export default function InvestorPage() {
   return (
     <ServicePageLayout
       eyebrow="Investor"
-      title="Buying, building, and backing businesses."
+      title="Buying, building, and backing businesses"
       ctas={[
         {
           href: "/contact",

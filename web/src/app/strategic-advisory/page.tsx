@@ -13,7 +13,7 @@ export default function StrategicAdvisoryPage() {
   return (
     <ServicePageLayout
       eyebrow="Strategic Advisory"
-      title="Strategy that changes lives at the SME level."
+      title="Strategy that changes lives at the SME level"
       ctas={[
         {
           href: COMPASS_POINT_URL,
