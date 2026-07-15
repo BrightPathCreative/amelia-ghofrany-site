@@ -5,7 +5,7 @@ import { ContentPageLayout } from "@/components/ContentPageLayout";
 export const metadata: Metadata = {
   title: "Beyond the Boardroom | Amelia Ghofrany",
   description:
-    "A curious traveller and global citizen: how Amelia Ghofrany's journeys across 26 countries shape how she leads and connects.",
+    "Twenty-six countries, three continents called home, and a curiosity that keeps Amelia Ghofrany saying yes to the unknown, from Peru to Melbourne, with Antarctica next.",
 };
 
 export default function BeyondPage() {
