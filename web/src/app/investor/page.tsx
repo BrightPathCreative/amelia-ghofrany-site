@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Investor | Amelia Ghofrany",
+  title: "Investor",
   description:
     "Amelia Ghofrany invests in businesses at different stages: acquisitions, growth partnerships and founder backing with strategic mentoring.",
 };

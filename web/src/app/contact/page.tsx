@@ -3,7 +3,7 @@ import { ContactEmbed } from "@/components/ContactEmbed";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Contact | Amelia Ghofrany",
+  title: "Contact",
   description:
     "Get in touch with Amelia Ghofrany, investor, strategic advisor and speaker. Book a discovery call or send an enquiry.",
 };

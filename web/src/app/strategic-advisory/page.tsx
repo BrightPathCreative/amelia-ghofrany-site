@@ -5,7 +5,7 @@ import { ServicePageLayout } from "@/components/ServicePageLayout";
 const COMPASS_POINT_URL = "https://www.compasspointadvisory.com/";
 
 export const metadata: Metadata = {
-  title: "Strategic Advisory | Amelia Ghofrany",
+  title: "Strategic Advisory",
   description:
     "Values-led strategic advisory for SMEs, founders and family enterprises through CompassPoint Advisory: plain advice that gets acted on.",
 };

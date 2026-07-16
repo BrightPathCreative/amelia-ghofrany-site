@@ -3,7 +3,7 @@ import { About } from "@/components/About";
 import { ContentPageLayout } from "@/components/ContentPageLayout";
 
 export const metadata: Metadata = {
-  title: "About | Amelia Ghofrany",
+  title: "About",
   description:
     "Enterprise rigour, founder energy and human-first leadership: Amelia Ghofrany's story across continents, cultures and 20+ years of transformation work.",
 };

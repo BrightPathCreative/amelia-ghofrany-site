@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Speaker | Amelia Ghofrany",
+  title: "Speaker",
   description:
     "Amelia Ghofrany is available for keynotes, panels, workshops and podcasts on women in leadership, business growth, and meaningful change.",
 };

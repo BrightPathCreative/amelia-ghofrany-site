@@ -28,13 +28,39 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amelia Ghofrany | Investor, Strategic Advisor, Speaker",
+  metadataBase: new URL("https://www.ameliaghofrany.com"),
+  title: {
+    default: "Amelia Ghofrany | Investor, Strategic Advisor, Speaker",
+    template: "%s | Amelia Ghofrany",
+  },
   description:
     "I buy and build Australian businesses, help their leaders make sharper calls, and speak on what it actually takes to lead with purpose.",
   openGraph: {
+    type: "website",
+    locale: "en_AU",
+    url: "https://www.ameliaghofrany.com",
+    siteName: "Amelia Ghofrany",
     title: "Amelia Ghofrany",
     description:
       "Investor. Strategic advisor. Speaker. Buying and building Australian businesses, advising leaders, and speaking on purpose-led leadership.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Amelia Ghofrany — Investor, Strategic Advisor, Speaker",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amelia Ghofrany",
+    description:
+      "Investor. Strategic advisor. Speaker. Buying and building Australian businesses, advising leaders, and speaking on purpose-led leadership.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: "/",
   },
 };
 
