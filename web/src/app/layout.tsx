@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "lenis/dist/lenis.css";
 import "./globals.css";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
@@ -84,6 +85,7 @@ export default function RootLayout({
           <Navigation />
           {children}
         </ScrollProvider>
+        <Analytics />
       </body>
     </html>
   );
